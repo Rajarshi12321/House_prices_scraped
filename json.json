@@ -1,0 +1,542 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h180_w240/66966131_4_HOTO202305081631181_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Phoenix One Bangalore West, Rajajinagar, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.994704",
+      "longitude": "77.5514405"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rajajinagar",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/2-BHK-1358-Sq-ft-Multistorey-Apartment-FOR-Rent-Uttarahalli-in-Bangalore&id=4d423637333235363633",
+    "url": "https://www.magicbricks.com/propertyDetails/2-BHK-1358-Sq-ft-Multistorey-Apartment-FOR-Rent-Uttarahalli-in-Bangalore&id=4d423637333235363633",
+    "numberOfRooms": "2",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/01/Photo_h180_w240/67325663_5_hatsAppImage20230601at12.47.34PM2_180_240.jpeg",
+    "name": "2 BHK Flat  for Rent in Prestige Lake Ridge, Uttarahalli Hobli, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.906179",
+      "longitude": "77.5491255"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Uttarahalli Hobli",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1985-Sq-ft-Multistorey-Apartment-FOR-Rent-Hebbal-in-Bangalore&id=4d423637343434383233",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1985-Sq-ft-Multistorey-Apartment-FOR-Rent-Hebbal-in-Bangalore&id=4d423637343434383233",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/09/16/Project-Photo-23-L-and-T-Raintree-Boulevard-Bangalore-5086183_640_959_310_462.jpg",
+    "name": "3 BHK Flat  for Rent in  L&T Raintree Boulevard, Hebbal, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.0349961",
+      "longitude": "77.5981732"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hebbal",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1706-Sq-ft-Multistorey-Apartment-FOR-Rent-Talaghattapura-in-Bangalore&id=4d423636373035353037",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1706-Sq-ft-Multistorey-Apartment-FOR-Rent-Talaghattapura-in-Bangalore&id=4d423636373035353037",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2022/09/21/Project-Photo-34-Sobha-Arena-Bangalore-5090635_556_1010_310_462.jpg",
+    "name": "3 BHK Flat  for Rent in Sobha Arena, Talaghattapura, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.746104",
+      "longitude": "77.487602"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Talaghattapura",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2022/Nov/21/Photo_h180_w240/63764033_15_MG-20221115-WA0144_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in House of Hiranandani Devanahalli, Devanahalli, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.242081",
+      "longitude": "77.7135224"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Devanahalli",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/2-BHK-1345-Sq-ft-Multistorey-Apartment-FOR-Rent-Kasavanahalli-in-Bangalore&id=4d423637313239303133",
+    "url": "https://www.magicbricks.com/propertyDetails/2-BHK-1345-Sq-ft-Multistorey-Apartment-FOR-Rent-Kasavanahalli-in-Bangalore&id=4d423637313239303133",
+    "numberOfRooms": "2",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/19/Photo_h180_w240/67129013_4_PropertyImage899-0797974225796_180_240.jpg",
+    "name": "2 BHK Flat  for Rent in HS Towers , Kasavanahalli, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.9062004",
+      "longitude": "77.6754251"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kasavanahalli",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/1-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Vasanth-Nagar-in-Bangalore&id=4d423637313737343631",
+    "url": "https://www.magicbricks.com/propertyDetails/1-BHK-1200-Sq-ft-Multistorey-Apartment-FOR-Rent-Vasanth-Nagar-in-Bangalore&id=4d423637313737343631",
+    "numberOfRooms": "1",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/22/Photo_h180_w240/67177461_4_hatsAppImage20230522at6.36.24PM2_180_240.jpeg",
+    "name": "1 BHK Flat  for Rent in Vasanth Nagar, Bangalore",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.9897",
+      "longitude": "77.5927"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vasanth Nagar",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Challaghatta-in-Bangalore&id=4d423637363331383933",
+    "url": "https://www.magicbricks.com/propertyDetails/2-BHK-1000-Sq-ft-Multistorey-Apartment-FOR-Rent-Challaghatta-in-Bangalore&id=4d423637363331383933",
+    "numberOfRooms": "2",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/21/Photo_h180_w240/67631893_15_hatsAppImage20230621at2.22.01PM2_180_240.jpeg",
+    "name": "2 BHK Flat  for Rent in Challaghatta, Airport Road, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.93866505",
+      "longitude": "77.64592626"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Challaghatta, Airport Road",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1790-Sq-ft-Multistorey-Apartment-FOR-Rent-K-R-Puram-in-Bangalore&id=4d423637363238383435",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1790-Sq-ft-Multistorey-Apartment-FOR-Rent-K-R-Puram-in-Bangalore&id=4d423637363238383435",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/21/Photo_h180_w240/67628845_3_302c0a95320411cb875d238789933d1_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Regal Prelude, Krishnarajapura, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.0201920606323",
+      "longitude": "77.721888806967"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Krishnarajapura",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423636313332353035",
+    "url": "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-in-Bangalore&id=4d423636313332353035",
+    "numberOfRooms": "1",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Mar/20/Photo_h180_w240/66132505_2_PropertyImage1679290967715_180_240.jpg",
+    "name": "1 BHK Flat  for Rent in Hsr Layout, Bangalore",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.926721572875977",
+      "longitude": "77.63997650146484"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hsr Layout",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Multistorey-Apartment-FOR-Rent-Vasanth-Nagar-in-Bangalore&id=4d423637313234393335",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-2500-Sq-ft-Multistorey-Apartment-FOR-Rent-Vasanth-Nagar-in-Bangalore&id=4d423637313234393335",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-2-Legacy-Mycon-Duv-Bangalore-5040435_697_1164_310_462.gif",
+    "name": "3 BHK Flat  for Rent in Legacy Mycon Duv, Vasanth Nagar, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.990803",
+      "longitude": "77.587482"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Vasanth Nagar",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1745-Sq-ft-Multistorey-Apartment-FOR-Rent-Gubbalala-in-Bangalore&id=4d423637363330393431",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1745-Sq-ft-Multistorey-Apartment-FOR-Rent-Gubbalala-in-Bangalore&id=4d423637363330393431",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/Project-Photo-6-Mantri-Tranquil-Bangalore-5000694_310_460_310_462.jpg",
+    "name": "3 BHK Flat  for Rent in Mantri Tranquil, Gubbalala, Subramanyapura, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.746104",
+      "longitude": "77.487602"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gubbalala, Subramanyapura",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1655-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423636313634323931",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1655-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423636313634323931",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Mar/20/Photo_h180_w240/66164291_9_hatsAppImage20230310at13641PM_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Prestige Lakeside Habitat, Whitefield, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.930376",
+      "longitude": "77.740121"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Whitefield",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1630-Sq-ft-Multistorey-Apartment-FOR-Rent-Garudachar-Palya-in-Bangalore&id=4d423637333539373539",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1630-Sq-ft-Multistorey-Apartment-FOR-Rent-Garudachar-Palya-in-Bangalore&id=4d423637333539373539",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/03/Photo_h180_w240/67359759_7_hatsAppImage20230603at19.46.501_180_240.jpeg",
+    "name": "3 BHK Flat  for Rent in Brigade Metropolis, Garudachar Palya, Mahadevapura, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.99130726",
+      "longitude": "77.68758598"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Garudachar Palya, Mahadevapura",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/4-BHK-3027-Sq-ft-Multistorey-Apartment-FOR-Rent-HAL-in-Bangalore&id=4d423637343831373239",
+    "url": "https://www.magicbricks.com/propertyDetails/4-BHK-3027-Sq-ft-Multistorey-Apartment-FOR-Rent-HAL-in-Bangalore&id=4d423637343831373239",
+    "numberOfRooms": "4",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/12/Photo_h180_w240/67481729_6_hatsAppImage20230612at11.22.36_180_240.jpeg",
+    "name": "4 BHK Flat  for Rent in Prestige Leela Residences, HAL, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.960286",
+      "longitude": "77.64723"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "HAL",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-2666-Sq-ft-Multistorey-Apartment-FOR-Rent-Dr-Puneeth-Rajkumar-Road-in-Bangalore&id=4d423636313739323135",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-2666-Sq-ft-Multistorey-Apartment-FOR-Rent-Dr-Puneeth-Rajkumar-Road-in-Bangalore&id=4d423636313739323135",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2019/06/21/Project-Photo-36-Embassy-Pristine-Bangalore-5022463_960_1280_310_462.jpg",
+    "name": "3 BHK Flat  for Rent in Embassy Pristine, Dr Puneeth Rajkumar Road, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.9229595",
+      "longitude": "77.5562663"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dr Puneeth Rajkumar Road",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/4-BHK-1806-Sq-ft-Multistorey-Apartment-FOR-Rent-Sarjapur-in-Bangalore&id=4d423637353332333735",
+    "url": "https://www.magicbricks.com/propertyDetails/4-BHK-1806-Sq-ft-Multistorey-Apartment-FOR-Rent-Sarjapur-in-Bangalore&id=4d423637353332333735",
+    "numberOfRooms": "4",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/15/Photo_h180_w240/67532375_9_MG20220721181157_180_240.jpg",
+    "name": "4 BHK Flat  for Rent in Sobha Royal Pavilion, Sarjapura, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.900521",
+      "longitude": "77.710237"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sarjapura",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-2557-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423635373633373939",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-2557-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423635373633373939",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Feb/23/Photo_h180_w240/65763799_19_PropertyImage1677131768985_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Phoenix One Bangalore West, Rajajinagar, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.994704",
+      "longitude": "77.5514405"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rajajinagar",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1820-Sq-ft-Multistorey-Apartment-FOR-Rent-Hebbal-in-Bangalore-r6&id=4d423530323336373730",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1820-Sq-ft-Multistorey-Apartment-FOR-Rent-Hebbal-in-Bangalore-r6&id=4d423530323336373730",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2020/Oct/11/Photo_h180_w240/50236770_10_PropertyImage326-0645377472573_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Hiranandani Glen Gate, Hebbal, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.0349961",
+      "longitude": "77.5981732"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hebbal",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-BTM-Layout-in-Bangalore&id=4d423636353430303637",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1400-Sq-ft-Multistorey-Apartment-FOR-Rent-BTM-Layout-in-Bangalore&id=4d423636353430303637",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Apr/15/Photo_h180_w240/66540067_6_PropertyImage841-1120880201679_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Janhavi Meadows, Btm Layout, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.864384",
+      "longitude": "77.617389"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Btm Layout",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1595-Sq-ft-Multistorey-Apartment-FOR-Rent-Dadamastan-layout-in-Bangalore&id=4d423636373039373937",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1595-Sq-ft-Multistorey-Apartment-FOR-Rent-Dadamastan-layout-in-Bangalore&id=4d423636373039373937",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Apr/22/Photo_h180_w240/66709797_9_hatsAppImage20230413at15.02.31_180_240.jpeg",
+    "name": "3 BHK Flat  for Rent in Bhartiya City Nikoo Homes, Dadamastan Layout, Nagavara, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.0582034",
+      "longitude": "77.6210251"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dadamastan Layout, Nagavara",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1376-Sq-ft-Multistorey-Apartment-FOR-Rent-Begur-Road-in-Bangalore&id=4d423637353833303039",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1376-Sq-ft-Multistorey-Apartment-FOR-Rent-Begur-Road-in-Bangalore&id=4d423637353833303039",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Jun/18/Photo_h180_w240/67583009_3_hatsAppImage20210713at13.23.41_180_240.jpeg",
+    "name": "3 BHK Flat  for Rent in Prestige Song of the South, Begur Road, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.888731",
+      "longitude": "77.625587"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Begur Road",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/4-BHK-2075-Sq-ft-Multistorey-Apartment-FOR-Rent-Bagalakunte-in-Bangalore&id=4d423637323630383931",
+    "url": "https://www.magicbricks.com/propertyDetails/4-BHK-2075-Sq-ft-Multistorey-Apartment-FOR-Rent-Bagalakunte-in-Bangalore&id=4d423637323630383931",
+    "numberOfRooms": "4",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/28/Photo_h180_w240/67260891_1_hatsAppImage20230528at12.27.11PM_180_240.jpeg",
+    "name": "4 BHK Flat  for Rent in Prestige Jindal City, Bagalakunte, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.158156",
+      "longitude": "77.325762"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bagalakunte",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/2-BHK-980-Sq-ft-Multistorey-Apartment-FOR-Rent-JP-Nagar-Phase-7-in-Bangalore&id=4d423636363833373939",
+    "url": "https://www.magicbricks.com/propertyDetails/2-BHK-980-Sq-ft-Multistorey-Apartment-FOR-Rent-JP-Nagar-Phase-7-in-Bangalore&id=4d423636363833373939",
+    "numberOfRooms": "2",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Apr/21/Photo_h180_w240/66683799_9_PropertyImage459-13771543724334_180_240.jpg",
+    "name": "2 BHK Flat  for Rent in Phase 7 JP Nagar, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.8900549",
+      "longitude": "77.57681388"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Phase 7 JP Nagar",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-2104-Sq-ft-Multistorey-Apartment-FOR-Rent-Konanakunte-in-Bangalore&id=4d423636373531353537",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-2104-Sq-ft-Multistorey-Apartment-FOR-Rent-Konanakunte-in-Bangalore&id=4d423636373531353537",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/Apr/25/Photo_h180_w240/66751557_10_PropertyImage471-3320676958038_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Prestige Falcon City, Konanakunte, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.746104",
+      "longitude": "77.487602"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Konanakunte",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Bannerghatta-Main-Road-in-Bangalore-r2&id=4d423131373839393733",
+    "url": "https://www.magicbricks.com/propertyDetails/3-BHK-1500-Sq-ft-Multistorey-Apartment-FOR-Rent-Bannerghatta-Main-Road-in-Bangalore-r2&id=4d423131373839393733",
+    "numberOfRooms": "3",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2021/Dec/13/Photo_h180_w240/11789973_3_PropertyImage493-58800469949915_180_240.jpg",
+    "name": "3 BHK Flat  for Rent in Puravankara Purva Panorama, Bannerghatta Main Road, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "12.8663362789213",
+      "longitude": "77.5922014499973"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bannerghatta Main Road",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Apartment",
+    "@id": "https://www.magicbricks.com/propertyDetails/4-BHK-4000-Sq-ft-Multistorey-Apartment-FOR-Rent-Hebbal-in-Bangalore&id=4d423634323130323139",
+    "url": "https://www.magicbricks.com/propertyDetails/4-BHK-4000-Sq-ft-Multistorey-Apartment-FOR-Rent-Hebbal-in-Bangalore&id=4d423634323130323139",
+    "numberOfRooms": "4",
+    "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2022/Nov/20/Photo_h180_w240/64210219_2_1668848242195-935_180_240.jpg",
+    "name": "4 BHK Flat  for Rent in RMZ Latitude, Hebbal, Bangalore undefined",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "13.056329",
+      "longitude": "77.595106"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hebbal",
+      "addressRegion": "Bangalore",
+      "addressCountry": "IN"
+    }
+  }
+]
