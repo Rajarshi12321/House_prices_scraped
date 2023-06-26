@@ -1,0 +1,1252 @@
+{
+  "isCsr": false,
+  "userInfoData": {
+    "userName": null,
+    "firstName": null,
+    "userEmail": null,
+    "userPrimeMemberLoggedIn": "N",
+    "userIsdCode": null,
+    "userMobile": null,
+    "userUniqToken": null,
+    "isUserLoggedIn": "N",
+    "fingerprint": null,
+    "isFreeUser": null,
+    "userTelephone": null,
+    "userTelephoneIsd": null,
+    "userType": null,
+    "sessionCount": 0,
+    "searchSaved": "N",
+    "userRefNo": null,
+    "ubiEnc": null,
+    "isPrimePlusUser": "N",
+    "isPrimePlusExpired": "N"
+  },
+  "propertyDetailInfoBeanData": {
+    "propertyId": "66966131",
+    // "cityName": "Bangalore",
+    "cityId": "3327",
+    "localityName": "Rajaji-Nagar",
+    "localityId": "80298",
+    "shortUrlPDP": null,
+    "appDownloadFreq": null,
+    "alliance": null,
+    "category": "R",
+    // "propertyDetail": {
+      "detailBean": {
+        "pmtUbiRfNum": "5725042",
+        "pmtsource": "Web",
+        "propertyId": "66966131",
+        "propertyFor": "For Rent",
+        "propertyType": "Multistorey Apartment",
+        "propertyDescription": "Nice flat with a fully loaded furntire.",
+        "coveredArea": "2390",
+        // "bedrooms": "3",
+        // "bedroomDesc": "3",
+        // "bathrooms": "3",
+        // "bathroomDesc": "3",
+        "priceOutputLabel": "Rent : ",
+        "saleRentPrice": "1.7 Lac",
+        "propertyAddress": "Rajaji Nagar, Bangalore, Rajaji Nagar, Bangalore - Central, Karnataka",
+        "defaultAddressGoogle": "BangaloreKarnataka",
+        // "postedOn": "Jun 24, '23",
+        "landMarks": "One bangalore west.",
+        // "furnished": "Furnished",
+        // "facing": "North - East",
+        // "floorNumber": "20",
+        "unitsAvailable": "2",
+        // "nnadispname": "Rajaji Nagar",
+        // "totalFloorNumber": "30",
+        // "transactionType": "Rent",
+        "ageofcons": "New Construction",
+        // "amenityMap": {
+          "12201": "Power Back Up",
+          "12202": "Lift",
+          "12203": "Rain Water Harvesting",
+          "12204": "Club House",
+          "12205": "Swimming Pool",
+          "12206": "Gymnasium",
+          "12207": "Park",
+          "12208": "Reserved Parking",
+          "12209": "Security",
+          "12212": "Private Terrace/Garden",
+          "12216": "Visitor Parking",
+          "12217": "Intercom Facility",
+          "12218": "Maintenance Staff",
+          "12224": "Banquet Hall",
+          "12226": "Cafeteria/Food Court",
+          "1404107": "Barbeque Pit",
+          "1404114": "Event Space & Amphitheatre",
+          "1404117": "Indoor Games Room",
+          "1404118": "Indoor Squash & Badminton Courts",
+          "1404122": "Kids Play Pool With Water Slides",
+          "1404125": "Multipurpose Courts",
+          "1404126": "Outdoor Tennis Courts"
+        },
+        "city": "Bangalore",
+        "cityCode": "3327",
+        "citySuburbCode": "1001013",
+        "premiumProperty": true,
+        "noOfDetailedView": "0",
+        "postedBy": "Agent",
+        "contactPersonName": "Santosh",
+        "contactAddress": " NA, Bangalore, Karnataka, India",
+        "mobileNumber": "",
+        "userType": "Z",
+        "companyName": "S2 Milkyway Links",
+        "companyLogo": "https://img.staticmb.com/mbimages/user/Photo_h75_w75/5725042_5725042_Logo_75_75.jpg",
+        "operatingSince": "2000",
+        "contactForm": true,
+        "showUserContact": true,
+        "agentId": "5725042",
+        "numberOfBalconied": "3",
+        "numberOfBalconiedDesc": "3",
+        "propertySource": "Web",
+        "propertyOwner": "5725042",
+        "projectName": "Phoenix One Bangalore West",
+        // "amenityExternalMap": {
+          "12201": "Power Back Up",
+          "12202": "Lift",
+          "12203": "Rain Water Harvesting",
+          "12204": "Club House",
+          "12205": "Swimming Pool",
+          "12206": "Gymnasium",
+          "12207": "Park",
+          "12208": "Reserved Parking",
+          "12209": "Security",
+          "12212": "Private Terrace/Garden",
+          "12216": "Visitor Parking",
+          "12217": "Intercom Facility",
+          "12218": "Maintenance Staff",
+          "12224": "Banquet Hall",
+          "12226": "Cafeteria/Food Court",
+          "1404107": "Barbeque Pit",
+          "1404114": "Event Space & Amphitheatre",
+          "1404117": "Indoor Games Room",
+          "1404118": "Indoor Squash & Badminton Courts",
+          "1404122": "Kids Play Pool With Water Slides",
+          "1404125": "Multipurpose Courts",
+          "1404126": "Outdoor Tennis Courts"
+        },
+        // "locality": "Rajaji Nagar",
+        "displayPrice": true,
+        "propertyTypeCode": "10002",
+        "saleOrRent": "R",
+        "developerName": "Phoenix Mills Ltd.",
+        "projectLink": "phoenix-one-bangalore-west-rajaji-nagar-bangalore-pdpid-4d4235303335383833",
+        "projectNameHighlighted": "Phoenix One Bangalore West",
+        // "carpetArea": "2000",
+        // "carpetAreaUnit": "Sq-ft",
+        "nameOfSociety": "Phoenix One Bangalore West",
+        "possessionStatus": "Immediately",
+        "additionalRooms": "Puja Room, Study, Store, Servant Room",
+        "amenitiesFacing": "Garden/Park, Pool",
+        "completionScore": "100",
+        "listingTypeDesc": "Prime Listings",
+        // "xVal": "77.5514405",
+        // "yVal": "12.994704",
+        "mapDataFromUser": false,
+        "poiDataAvailable": false,
+        "bedRoomCode": "11702",
+        "price": "0",
+        "localityPhotos": 0,
+        "advMobileCountry": "India",
+        "propPsm": "5035883",
+        "ownerID": "5725042",
+        "totalImageCount": 0,
+        "totalPropertyImageCount": 0,
+        "cornerProperty": false,
+        "brokerageResponse": false,
+        "banks": "1404085,1500005,1404087,1404088,1404104,1404086",
+        "unitCountonFloor": "4",
+        "flooringType": "Marble, Wooden",
+        "tenantDescriptionSecond": "",
+        "newKeyFacillity": false,
+        "checkPoiOrMbDataMatch": false,
+        "agentBuildSeoUrl": "https://www.magicbricks.com/property-agent-details/broker-S2-Milkyway-Links-in-Bangalore-agentid-4d4235373235303432",
+        "shortAddress": "Rajajinagar, Bangalore",
+        "isVisible": "W",
+        "saleProperties": "55",
+        "rentProperties": "67",
+        "salePropertiesUrl": "/property-for-sale/real-estate-agent-broker-s2-milkyway-links&id=4d4235373235303432",
+        "rentPropertiesUrl": "/property-for-rent/real-estate-agent-broker-s2-milkyway-links&id=4d4235373235303432",
+        "waterStatus": "24 Hours Available",
+        "electricityStatus": "No/Rare Powercut",
+        "carParking": "2 Covered",
+        //// "noOfLifts": "3",
+        "bookingAmount": "15.0 Lac",
+        // "bookingAmountExact": "1500000",
+        //// "maintenanceCharges": "1,000",
+        //// "maintenanceChargesFrequency": "Monthly",
+        "maintenanceChargesFrequencyId": "23001",
+        "bedroomOrCommercialConfig": "20 X 22 ft, 18 X 20 ft, 20 X 25 ft",
+        "commercialOrPgProperty": false,
+        "donotDisplayAddress": false,
+        "tenantsBachelor": "D",
+        "tenantsNonVeg": "D",
+        "tenantsWithPets": "D",
+        "tenantsWithoutCompanyLease": "D",
+        // "brokerage": "30 days",
+        "showOtherCharges": "Y",
+        "localityDisplayName": "Rajaji Nagar",
+        "postingDate": "Jun 24, '23",
+        // "exactSaleRentPrice": "170000",
+        "brokerConnectApiTag": "Y",
+        "isSmartDiaryApiTag": "Y",
+        "isDistress": "",
+        "b2cEnabledCity": false,
+        "image": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h300_w450/66966131_8_HOTO20230508163118_300_450.jpg",
+        "imageLuxury": "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h600_w900/66966131_8_HOTO20230508163118_600_900.jpg",
+        "propAllImg": "66966131_2_HOTO20230508163122.jpg,66966131_3_HOTO20230508163120.jpg,66966131_4_HOTO202305081631181.jpg,66966131_9_HOTO20230508163121.jpg,66966131_6_HOTO20230508163117.jpg,66966131_7_HOTO202305081631191.jpg,66966131_8_HOTO20230508163118.jpg,66966131_1_HOTO20230508163124.jpg,66966131_5_HOTO20230508163123.jpg",
+        "propImageCount": 9,
+        "floorPlanImg": "https://img.staticmb.com/mbimages/project/Photo_h310_w462/2019/01/28/Location-Plan-41-Phoenix-One-Bangalore-West-Bangalore-5035883_621_1000_310_462.jpg",
+        "imageId": "PROP277739443",
+        "showPhotoimage": "bricks/photoComponent.html?source=detail&pid=66966131&imageId=PROP277739443",
+        "latitude": 12.994704,
+        "longitude": 77.5514405,
+        "maskNumber": "80XXXXXXXX",
+        "poojaRoom": "Y",
+        "storeRoom": "Y",
+        "servantRoom": "Y",
+        "studyRoom": "Y",
+        "parentProperyTypeCode": "9000",
+        "furnishingDetails": {
+          "1006121": "4 AC",
+          "1006122": "3 Bed",
+          "1006123": "4 Wardrobe",
+          "1006124": " Fridge",
+          "1006125": "2 TV",
+          "1006126": " Washing Machine",
+          "1006127": " Sofa",
+          "1006128": " Dining Table",
+          "1006129": " Gas Connection",
+          "1006130": " Microwave"
+        },
+        "projectApprovedByBankName": "Axis Bank, Canara Bank, HDFC, ICICI, Punjab National Bank, SBI",
+        "amenityFacing": "Garden/Park Facing Pool Facing ",
+        "additionalRoom": [
+          "Puja Room",
+          "Study",
+          "Store",
+          "Servant Room"
+        ],
+        "refreshCount": 0,
+        "mealsIncluded": false,
+        "cookingAllowed": false,
+        "guestAllowed": false,
+        "chkSiteVisit": false,
+        "ac": "4",
+        "actualOwner": "5725042",
+        "ecLhsApi": false,
+        "locSeoName": "Rajaji Nagar",
+        "luxuryTypeList": [
+          "Private Terrace/Garden##12212",
+          "Cafeteria/Food Court##12226",
+          "Banquet Hall##12224",
+          "Park##12207",
+          "Event Space & Amphitheatre##1404114",
+          "Multipurpose Courts##1404125",
+          "Kids Play Pool With Water Slides##1404122",
+          "Indoor Squash & Badminton Courts##1404118"
+        ],
+        "isLuxDiff": "Y",
+        "loading": "16",
+        "expShowFlg": "",
+        "coveredAreaSqft": "71",
+        "carpetAreaSqft": "85",
+        "weekDayWiseAvailabilityTimings": {},
+        "stateId": "516",
+        "agentDetails": {
+          "expertiseIn": "Residential",
+          "numOfEmp": "9",
+          "operatingSince": "2014",
+          "agentQulityScore": "3"
+        },
+        "prjid": "5035883",
+        "url": "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
+        // "coveredAreaUnit": "Sq-ft",
+        // "sqftPrice": "71.0",
+        "sqftPriceSimple": "71.0",
+        "localityId": "80298",
+        "lmtdislocalityId": "80298",
+        "lmtdislocalityName": "Rajajinagar",
+        "isMapTab": false,
+        "isVerified": "N",
+        "floorShowPhotoimagel": "bricks/photoComponent.html?source=detail&pid=66966131&fromPage=layou",
+        "showVisibleClientFeature": "Y",
+        "title": "Rent 3 BHK Flat/Apartment in Phoenix One Bangalore West Rajajinagar, Bangalore - 2390 Sq-ft",
+        "description": "Monthly Rent - 1.7 Lac ✓ 2390 Sq-ft  - Nice flat with a fully loaded furntire",
+        "h1TagText": "3 BHK 2390 Sq-ft Flat/Apartment for Rent in Phoenix One Bangalore West Rajajinagar",
+        "oname": "Santosh",
+        "price1": "Rs. 1,70,000",
+        "marketPrice": "170000",
+        "phoneVisible": "Y",
+        "agentType": "Agent",
+        "saleOrRentPost": "R",
+        // "saleRent": "Rent",
+        "postingType": "P",
+        "isPaidUser": "Y",
+        "mobileisd": "+91",
+        "towersDetails": {
+          "psmId": "5035883",
+          "towersList": [
+            {
+              "towerName": "Tower 1",
+              "floor": "30",
+              "structure": "Completed",
+              "extPlaster": "Completed",
+              "intPlaster": "Completed",
+              "flooring": "Completed",
+              "finishing": "Under Const.",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 2",
+              "floor": "30",
+              "structure": "Completed",
+              "extPlaster": "Completed",
+              "intPlaster": "Completed",
+              "flooring": "Completed",
+              "finishing": "Under Const.",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 3",
+              "floor": "30",
+              "structure": "Completed",
+              "extPlaster": "Completed",
+              "intPlaster": "Completed",
+              "flooring": "Completed",
+              "finishing": "Under Const.",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 4",
+              "floor": "30",
+              "structure": "Completed",
+              "extPlaster": "Completed",
+              "intPlaster": "Completed",
+              "flooring": "Under Const.",
+              "finishing": "-",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 5",
+              "floor": "30",
+              "structure": "Completed",
+              "extPlaster": "Completed",
+              "intPlaster": "Completed",
+              "flooring": "Under Const.",
+              "finishing": "-",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 6",
+              "floor": "30",
+              "structure": "-",
+              "extPlaster": "-",
+              "intPlaster": "-",
+              "flooring": "-",
+              "finishing": "-",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 7",
+              "floor": "30",
+              "structure": "-",
+              "extPlaster": "-",
+              "intPlaster": "-",
+              "flooring": "-",
+              "finishing": "-",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 8",
+              "floor": "30",
+              "structure": "-",
+              "extPlaster": "-",
+              "intPlaster": "-",
+              "flooring": "-",
+              "finishing": "-",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            },
+            {
+              "towerName": "Tower 9",
+              "floor": "30",
+              "structure": "-",
+              "extPlaster": "-",
+              "intPlaster": "-",
+              "flooring": "-",
+              "finishing": "-",
+              "commnets": null,
+              "flatsPerFloor": null,
+              "ceilingHeight": null,
+              "jodiOpportunity": null,
+              "caSizeFloor": null,
+              "flooringType": null
+            }
+          ],
+          "towers": 9
+        },
+        "localityDetails": {
+          "localityName": "Rajajinagar",
+          "cityName": "3327",
+          "videoID": "_64FxUntNFE",
+          "localityId": "80298"
+        },
+        "priceBreakUp": {
+          "elecWtrExtra": "Y",
+          "brokeragePrice": "&#8377; 1,70,000",
+          "brokeragePerOrDays": "30 days",
+        //   "rentPrice": "1,70,000",
+        //   "monthlyMaintenance": "1,000",
+        //   "monthlyCharges": "1,71,000",
+        //   "securityDeposit": "15,00,000",
+        //   "firstMonthCharges": "18,41,000",
+          "caseNum": "4",
+          "isOtherThanBasicPrice": "N",
+          "caseSpec": false,
+          "priceBreakUp": false
+        },
+        "imageType": "10505",
+        "imageTypeForFlorePlane": "1404083",
+        "championPropertyCount": "0",
+        "sipro": "67002503 64534417 67113733",
+        "lCct": "0",
+        "pCct": "0",
+        "pSc": "0",
+        "ubicopsinceyear": "2014",
+        "ubicemployees": "9",
+        "crisilRv1CtBy": "Krishna Kant Singh",
+        "commercialSalePropertiesUrl": "/property-for-sale/ALL-COMMERCIAL-by-s2-milkyway-links-real-estate-agent-Bangalore&id=4d4235373235303432&sortBy=postRecency",
+        "commercialRentPropertiesUrl": "/property-for-rent/ALL-COMMERCIAL-by-s2-milkyway-links-real-estate-agent-Bangalore&id=4d4235373235303432&sortBy=postRecency",
+        "crisilRating": "3",
+        "numOfEmp": "9",
+        "agentEmail": "",
+        "allianceInfo": {},
+        "ifollowBudgetMax": "5000000",
+        "ifollowBudgetMin": "500",
+        "etMoneyCity": "3327,5196,2624,2944,6146,7045,2951,2060,4320,4378,6403",
+        "etMoneyPropertyType": "10000,10001,10002,10003,10006,10007,10008,10009,10010,10011,10012,10013,10014,10015,10016,10017,10018,10020,10021,10022,10026,10030,10051,10052",
+        "etMoneyRentValue": "15000",
+        "etMoneySecurityDeposit": "75000",
+        "pkgContMonthsCnt": 70,
+        "ctCurr": 8531,
+        "ctLast": 572,
+        "agentContinuityStr": "9000+ Buyers Served",
+        "cntvl": "100",
+        "achTdS": "552",
+        "achTmS": "589",
+        "pp": "Z",
+        "isVis": "W",
+        "sid": "13592,13520",
+        "devId": "56216",
+        "builderUrl": "phoenix-mills-ltd.-buid-4d423536323136",
+        "localityName": "Rajajinagar",
+        "encryptedId": "zcbW9PtnlfdzpSvf+uAgZw==",
+        "agentDetailsPDP": {
+          "noOfVerifiedProperties": 81,
+          "noOfBuyersServed": 17062,
+          "rmin": "50,000",
+          "rmax": "2.5 Lac",
+          "smin": "1.38 Cr",
+          "smax": "33.80 Cr",
+          "crisilRatings": {
+            "trackRecord": 0,
+            "marketReach": 0,
+            "experience": 0,
+            "customerFeedback": 0
+          },
+          "dealingIn": null,
+          "operatingIn": [
+            " Binny Pete",
+            " AECS Layout Sanjayanagara",
+            " Rajajinagar",
+            " Dollars Colony Stage 2nd RMV",
+            " Rajanukunte",
+            " Magadi Main Road",
+            " Vasanth Nagar",
+            " Mathikere",
+            " Hebbal",
+            " Yelahanka "
+          ],
+          "agentDetailUrl": "http://www.magicbricks.com/top-agent-details/company-s2-milkyway-links-in-bangalore-agentid-4d4235373235303432",
+          "noOfEmployees": 0,
+          "expertIn": "",
+          "dealingInStr": null,
+          "operatingInStr": " Binny Pete",
+          "operatingInCount": "9",
+          "yearsOfExperience": 23,
+          "alsoDealingInCount": null,
+          "agentimgTop": null,
+          "agentimgBottom": null,
+          "imgUrlNewAdmin": null
+        },
+        "sharedSeats": 0,
+        "minSeats": 0,
+        "smr": 0,
+        "exactDynamicPrice": 0,
+        "facilitiesDesc": "Power Back Up, Lift, Swimming Pool, Gymnasium, Reserved Parking, Security",
+        "operatingPSMSince": "2016",
+        "bestSuitedFor": "1686,1688",
+        "societyOverview": {
+          "Close to shops & market": true,
+          "Well Maintained Amenities (lift, playground, pool etc.)": true,
+          "Non-functional amenities or less amenities": false,
+          "Awesome connectivity": true
+        },
+        "pl": "Y",
+        //// "propertyAmenities": {
+          "12201": "Power Back Up",
+          "12202": "Lift",
+          "12205": "Swimming Pool",
+          "12206": "Gymnasium",
+          "12208": "Reserved Parking",
+          "12209": "Security"
+        },
+        "ctVerifd": "N",
+        "lctDate": "0",
+        "detailViewCt": "0",
+        "allImgPath": [
+          "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h300_w450/66966131_2_HOTO20230508163122_300_450.jpg",
+          "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h300_w450/66966131_3_HOTO20230508163120_300_450.jpg",
+          "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h300_w450/66966131_4_HOTO202305081631181_300_450.jpg",
+          "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h300_w450/66966131_9_HOTO20230508163121_300_450.jpg",
+          "https://img.staticmb.com/mbphoto/property/cropped_images/2023/May/09/Photo_h300_w450/66966131_6_HOTO20230508163117_300_450.jpg"
+        ],
+        "ctaDetailBean": {
+          "ctapid": 0,
+          "ctaid": 101,
+          "platform": 0,
+          "cnd_page": null,
+          "cndcontactstatus": null,
+          "header_icon": null,
+          "cta1": null,
+          "cta2": null,
+          "formheader": null,
+          "formsubheader": null,
+          "contactbutton": null,
+          "header_iconcta1": null,
+          "formheadercta1": null,
+          "formsubheadercta1": null,
+          "contactbuttoncta1": null
+        },
+        "carParkingCount": "2",
+        "minPricePerSeat": "1.7 Lac",
+        "noOfHotDesks": "0",
+        "noOfDedicatedDesks": "0",
+        "noOfOffices": "0",
+        "carParkingCoWo": "",
+        "bikeParkingCoWo": "",
+        "cwProjectLink": "phoenix-one-bangalore-west-rajaji-nagar-bangalore-pdpid-4d4235303335383833",
+        "contactDetailsHidden": false,
+        "topAmenities": false,
+        "postedViaMobile": false,
+        "stateDesc": "Karnataka",
+        "preferred": false
+      },
+      "projectViewBean": {
+        "livabilityRating": 3.6,
+        "developerName": "Phoenix Mills Ltd.",
+        "projectName": "Phoenix One Bangalore West",
+        "projectId": "5035883",
+        "totalUnits": 786,
+        "numberOfTowers": 10,
+        "possessionStatus": "Immediately",
+        "launchdate": "Nov 2012",
+        "paymentplan": "https://img.staticmb.com/mbimages/project/15946446415015035883_Payment-plan.JPG",
+        "psmbrochurelink": "https://img.staticmb.com/mbimages/project/1548661381196OBW_Brochure.pdf",
+        "projectUnits": "2,3,4 BHK Multistorey Apartment",
+        "displayPrice": "Rs. 2.94 Cr Onwards",
+        "displayPricePerSqft": "Rs. 13,617 - 19,318",
+        "groupedProjectUnits": "2, 3, 4 BHK ",
+        "projectApprovedByBankName": "Axis Bank, Canara Bank, HDFC, ICICI, Punjab National Bank, SBI",
+        "projectApprovedByBankId": "1404085,1500005,1404087,1404088,1404104,1404086",
+        "city": "3327",
+        "currentTab": [
+          "10002"
+        ],
+        "defaulttab": "10002",
+        "projectImage": "https://img.staticmb.com/mbimages/project/Photo_h100_w150/2021/03/04/Project-Photo-57-Phoenix-One-Bangalore-West-Bangalore-5035883_345_1366_100_150.jpg",
+        "projectHigh": [
+          "Orion Mall50 m",
+          "World Trade Centre 150 m",
+          "Brigade School 200 m",
+          "Columbia Asia Hospital 200 m",
+          "Metro Station 200 m",
+          "Malleshwaram 500 m",
+          "Metro Cash &amp; Carry 500 m",
+          "ISKCON 2.7 Km",
+          "Sadashivnagar 3.4 Km",
+          "M.G.Road 7 Km",
+          "International Airport 34 Km",
+          "USP:Great Appreciating Value",
+          "Clubhouse with multiple Amenities",
+          "Designer Landscape"
+        ],
+        "localityId": "80298",
+        "locality": "80298",
+        "waterRt": 4.8,
+        "electricityRt": 4.8,
+        "backupRt": 4.8,
+        "sewageRt": 4.8,
+        "sportsRt": 4.8,
+        "parkingRt": 4.8,
+        "gardenRt": 4.8,
+        "shopsRt": 4.8,
+        "constQualityRt": 4.8,
+        "maintenanceRt": 4.8,
+        "staffRt": 4.8,
+        "securityRt": 4.8,
+        "psmAvgRt": 4.8,
+        "prjMaintainanceRt": 4.8,
+        "prjInfraRt": 4.8,
+        "prjAmenityRt": 4.8,
+        "totalReview": "18",
+        "bhkConfig": "2,3,4 BHK Multistorey Apartments",
+        "projectPnTdisplay": "Y"
+      },
+      "seoBreadcrumbBean": {
+        "sequence": 0,
+        "label": null,
+        "altlabel": null,
+        "type": "Text",
+        "url": null,
+        "bclist": [
+          {
+            "sequence": 1,
+            "label": "Home",
+            "altlabel": null,
+            "type": "Link",
+            "url": "/",
+            "bclist": null,
+            "nestedMap": null,
+            "bcTopLoc": null,
+            "bcNearByLoc": null
+          },
+          {
+            "sequence": 2,
+            "label": "Property for rent in Bangalore",
+            "altlabel": null,
+            "type": "Link",
+            "url": "/property-for-rent-in-bangalore-pppfr",
+            "bclist": null,
+            "nestedMap": null,
+            "bcTopLoc": null,
+            "bcNearByLoc": null
+          },
+          {
+            "sequence": 3,
+            "label": "Rajaji Nagar rent",
+            "altlabel": null,
+            "type": "Link",
+            "url": "/property-for-rent-in-rajaji-nagar-bangalore-pppfr",
+            "bclist": null,
+            "nestedMap": null,
+            "bcTopLoc": null,
+            "bcNearByLoc": null
+          },
+          {
+            "sequence": 4,
+            "label": "Flat for rent in Rajaji Nagar",
+            "altlabel": null,
+            "type": "Link",
+            "url": "/flats-for-rent-in-rajaji-nagar-bangalore-pppfr",
+            "bclist": null,
+            "nestedMap": null,
+            "bcTopLoc": null,
+            "bcNearByLoc": null
+          },
+          {
+            "sequence": 5,
+            "label": "3 BHK for rent in Rajaji Nagar",
+            "altlabel": null,
+            "type": "Link",
+            "url": "/3-bhk-flats-for-rent-in-rajaji-nagar-bangalore-pppfr",
+            "bclist": null,
+            "nestedMap": null,
+            "bcTopLoc": null,
+            "bcNearByLoc": null
+          },
+          {
+            "sequence": 6,
+            "label": "2390 Sq-ft",
+            "altlabel": null,
+            "type": "Text",
+            "url": null,
+            "bclist": null,
+            "nestedMap": null,
+            "bcTopLoc": null,
+            "bcNearByLoc": null
+          }
+        ],
+        "nestedMap": {},
+        "bcTopLoc": null,
+        "bcNearByLoc": null
+      },
+      "isDbFallback": false,
+      "isValidPage": true,
+      "contactStoppingScraping": "N",
+      "devId": "56216",
+      "psmLaunchDt": "Nov 2012"
+    },
+    "pmtrfnumEnc": "zcbW9PtnlfdzpSvf+uAgZw==",
+    "propertyConfirmAvailDate": null
+  },
+  "searchAdditionalDataBean": {
+    "platform": "WEB",
+    "deviceType": "normal",
+    "isalnpdp": null,
+    "isNRIUser": false,
+    "isQview": false,
+    "nriUser": "N",
+    "isLuxuryEnabledProperty": false,
+    "topsimilarprojectpropertyforrent": "Y",
+    "topsimilarprojectpropertyforsale": "Y",
+    "topsimilarprojectpropertyfornonaln": "Y",
+    "topsimilarprojectpropertyforaln": "Y",
+    "isTier1City": "Y",
+    "nonPrimeMember": "Y",
+    "showreqcallbk": null,
+    "userPrimeSubscribed": null,
+    "mbPrimeCities": "Y",
+    "investorlistingAgent": null,
+    "investorlisting": "N",
+    "investorguide": "N",
+    "primeData": null,
+    "primeBanner": null,
+    "contactedProperties": null,
+    "loadVFChat": true,
+    "srbParam": "dHJhY2tpbmdDb2RlPXBkcCZyYW1JZD1udWxsJmNhdGVnb3J5PVImQ29udGFjdEV2ZW50RnJvbT1jaGF0Ym90LXdlYiZiZWRyb29tcz0zJnByb3BlcnR5VHlwZT1GbGF0JmNpdHk9MzMyNyZjaXR5TmFtZT1CYW5nYWxvcmUmbHQ9ODAyOTgmbG9jYWxpdHlOYW1lPVJhamFqaSBOYWdhciZidWRnZXRNaW49YmxhbmsmYnVkZ2V0TWF4PWJsYW5r",
+    "chatBotRenderTime": "15000",
+    "nudgeSwitchForChatBot": "Y",
+    "showNriLiveChatButtonOnSrpMob": true,
+    "freeOwnerContactedIds": null,
+    "semTrackingEnquire": null,
+    "searchType": "residential",
+    "wapBTShow": "N",
+    "webBTShow": "N",
+    "contactSource": "PDP",
+    "encLocalityId": "66KJdgKgPiU=",
+    "appCtaText": null,
+    "appTitle": null,
+    "showMarketPrice": "N",
+    "propertyUrlFromGallery": "http://www.magicbricks.com/mbldp/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331&utm_source=msite_share_property&utm_medium=msite&utm_campaign=ldp-overview-share",
+    "propertyUrlFromImg": "http://www.magicbricks.com/mbldp/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331&utm_source=msite_share_property&utm_medium=msite&utm_campaign=ldp-photogalleryview-share",
+    "propertyUrlFromStickyHeader": "http://www.magicbricks.com/mbldp/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331&utm_source=msite_share_property&utm_medium=msite&utm_campaign=ldp-sticky-share",
+    "redirectPostPropertyFromBT": "N",
+    "contactCookiesExpiryLimit": "90",
+    "showAppExclusiveCTA": "Y",
+    "noBrokerageBuilderVisType": "Z",
+    "vnEnableOnStartup": false,
+    "virtualNumberScreenStart": "1",
+    "virtualNumberScreenEnd": "3"
+  },
+  "seoSearchData": [
+    {
+      "header": "Similar Searches",
+      "textAndLink": [
+        {
+          "link": "3-bhk-flats-for-rent-in-bangalore-pppfr",
+          "text": "3 BHK Flat for rent in Bangalore"
+        },
+        {
+          "link": "3-bhk-independent-house-for-rent-in-bangalore-pppfr",
+          "text": "3 BHK House for rent in Bangalore"
+        },
+        {
+          "link": "3-bhk-villa-for-rent-in-bangalore-pppfr",
+          "text": "3 BHK Villa for rent in Bangalore"
+        }
+      ]
+    },
+    {
+      "header": "Flat near Rajajinagar",
+      "textAndLink": [
+        {
+          "link": "flats-for-rent-in-rt-nagar-bangalore-pppfr",
+          "text": "Flat for rent in RT Nagar Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-vijayanagar-bangalore-pppfr",
+          "text": "Flat for rent in Vijayanagar Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-manyata-tech-park-bangalore-pppfr",
+          "text": "Flat for rent in Manayata Tech Park Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-malleshwaram-bangalore-pppfr",
+          "text": "Flat for rent in Malleshwaram Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-domlur-bangalore-pppfr",
+          "text": "Flat for rent in Domlur Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-banashankari-stage-3-bangalore-pppfr",
+          "text": "Flat for rent in Stage 3rd Banashankari Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-mathikere-bangalore-pppfr",
+          "text": "Flat for rent in Mathikere Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-sanjay-nagar-bangalore-pppfr",
+          "text": "Flat for rent in Sanjayanagara Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-kammanahalli-bangalore-pppfr",
+          "text": "Flat for rent in Kammanahalli Bangalore"
+        },
+        {
+          "link": "flats-for-rent-in-vidyaranyapura-bangalore-pppfr",
+          "text": "Flat for rent in Vidyaranyapura Bangalore"
+        }
+      ]
+    },
+    {
+      "header": "2 BHK Flat near Rajajinagar",
+      "textAndLink": [
+        {
+          "link": "2-bhk-flats-for-rent-in-rt-nagar-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in RT Nagar Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-vijayanagar-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Vijayanagar Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-manyata-tech-park-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Manayata Tech Park Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-malleshwaram-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Malleshwaram Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-domlur-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Domlur Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-banashankari-stage-3-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Stage 3rd Banashankari Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-mathikere-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Mathikere Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-sanjay-nagar-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Sanjayanagara Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-kammanahalli-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Kammanahalli Bangalore"
+        },
+        {
+          "link": "2-bhk-flats-for-rent-in-vidyaranyapura-bangalore-pppfr",
+          "text": "2 BHK Flat for rent in Vidyaranyapura Bangalore"
+        }
+      ]
+    },
+    {
+      "header": "4 BHK Flat near Rajajinagar",
+      "textAndLink": [
+        {
+          "link": "4-bhk-flats-for-rent-in-vijayanagar-bangalore-pppfr",
+          "text": "4 BHK Flat for rent in Vijayanagar Bangalore"
+        },
+        {
+          "link": "4-bhk-flats-for-rent-in-malleshwaram-bangalore-pppfr",
+          "text": "4 BHK Flat for rent in Malleshwaram Bangalore"
+        },
+        {
+          "link": "4-bhk-flats-for-rent-in-domlur-bangalore-pppfr",
+          "text": "4 BHK Flat for rent in Domlur Bangalore"
+        },
+        {
+          "link": "4-bhk-flats-for-rent-in-vidyaranyapura-bangalore-pppfr",
+          "text": "4 BHK Flat for rent in Vidyaranyapura Bangalore"
+        }
+      ]
+    },
+    {
+      "header": "Property in Rajajinagar",
+      "textAndLink": [
+        {
+          "link": "flats-for-rent-in-rajaji-nagar-bangalore-pppfr",
+          "text": "Flat for rent in Rajajinagar Bangalore"
+        },
+        {
+          "link": "independent-house-for-rent-in-rajaji-nagar-bangalore-pppfr",
+          "text": "House for rent in Rajajinagar Bangalore"
+        },
+        {
+          "link": "villa-for-rent-in-rajaji-nagar-bangalore-pppfr",
+          "text": "Villa for rent in Rajajinagar Bangalore"
+        },
+        {
+          "link": "property-for-rent-in-rajaji-nagar-bangalore-pppfr",
+          "text": "Property for rent in Rajajinagar Bangalore"
+        }
+      ]
+    },
+    {
+      "header": "Property in Bangalore",
+      "textAndLink": [
+        {
+          "link": "flats-for-rent-in-bangalore-pppfr",
+          "text": "Flat for rent in Bangalore"
+        },
+        {
+          "link": "independent-house-for-rent-in-bangalore-anekal-pppfr",
+          "text": "House for rent in Bangalore"
+        },
+        {
+          "link": "villa-for-rent-in-bangalore-anekal-pppfr",
+          "text": "Villa for rent in Bangalore"
+        },
+        {
+          "link": "property-for-rent-in-bangalore-anekal-pppfr",
+          "text": "Property for rent in Bangalore"
+        }
+      ]
+    },
+    {
+      "header": "Popular Projects",
+      "textAndLink": [
+        {
+          "link": "jains-swadesh-uttarahalli-bangalore-pdpid-4d4235303236313536",
+          "text": "Jains Swadesh"
+        },
+        {
+          "link": "sattva-luxuria-malleshwaram-bangalore-pdpid-4d4235303031363931",
+          "text": "Sattva Luxuria"
+        },
+        {
+          "link": "cjn-sai-fortune-hoskote-bangalore-pdpid-4d4235313236373835",
+          "text": "CJN Sai Fortune"
+        },
+        {
+          "link": "dsr-highland-greenz-sarjapur-road-bangalore-pdpid-4d4235333333383131",
+          "text": "DSR Highland Greenz"
+        },
+        {
+          "link": "ds-max-sukruth-chandapura-bangalore-pdpid-4d4235333236363035",
+          "text": "DS MAX Sukruth"
+        },
+        {
+          "link": "happy-homes-triguna-electronic-city-bangalore-pdpid-4d4235333934323837",
+          "text": "Happy Homes Triguna"
+        },
+        {
+          "link": "engrace-by-modern-spaaces-sarjapur-road-bangalore-pdpid-4d4235333333373737",
+          "text": "Engrace by Modern Spaaces"
+        },
+        {
+          "link": "sattva-casa-crescent-benson-town-bangalore-pdpid-4d4235313132393537",
+          "text": "Sattva Casa Crescent "
+        },
+        {
+          "link": "mahaveer-highlands-kengeri-bangalore-pdpid-4d4235333933323635",
+          "text": "Mahaveer Highlands"
+        },
+        {
+          "link": "godrej-park-retreat-sarjapur-road-bangalore-pdpid-4d4235333236323037",
+          "text": "Godrej Park Retreat"
+        }
+      ]
+    },
+    {
+      "header": "Nearby Projects",
+      "textAndLink": [
+        {
+          "link": "celebrity-harmony-electronic-city-bangalore-pdpid-4d4235303031313030",
+          "text": "Celebrity Harmony"
+        },
+        {
+          "link": "aurora-iris-vidyaranyapura-bangalore-pdpid-4d4235313131363539",
+          "text": "Aurora Iris"
+        },
+        {
+          "link": "prosperity-apartments-jp-nagar-phase-5-bangalore-pdpid-4d4235313131363337",
+          "text": "Prosperity Apartments"
+        },
+        {
+          "link": "brigade-nanda-heights-padmanabhanagar-bangalore-pdpid-4d4235333333303833",
+          "text": "Brigade Nanda Heights"
+        },
+        {
+          "link": "chaithanya-samarpan-whitefield-bangalore-pdpid-4d4235303031303936",
+          "text": "Chaithanya Samarpan"
+        },
+        {
+          "link": "upkar-gardens-chandapura-bangalore-pdpid-4d4235313131363537",
+          "text": "Upkar Gardens"
+        },
+        {
+          "link": "bsr-paradise-hoskote-bangalore-pdpid-4d4235313234353037",
+          "text": "BSR Paradise"
+        },
+        {
+          "link": "neeraj-apartments-abbigere-bangalore-pdpid-4d4235313138373435",
+          "text": "Neeraj Apartments"
+        },
+        {
+          "link": "modern-soul-tree-sarjapur-road-bangalore-pdpid-4d4235313930323939",
+          "text": "Modern Soul Tree"
+        },
+        {
+          "link": "shriram-shympony-mallasandra-bangalore-pdpid-4d4235313131363431",
+          "text": "Shriram Shympony"
+        }
+      ]
+    }
+  ],
+  "banksInterLink": {
+    "staticBankInterLink": [
+      {
+        "bankId": "35",
+        "bankName": "HDFC",
+        "bankLogo": "/bankLogo/35_Logo.png",
+        "slug": "hdfc-bank",
+        "minroi": 8.5,
+        "maxroi": 8.9
+      },
+      {
+        "bankId": "21",
+        "bankName": "SBI",
+        "bankLogo": "/bankLogo/21_Logo.png",
+        "slug": "sbi",
+        "minroi": 8.5,
+        "maxroi": 8.9
+      },
+      {
+        "bankId": "177",
+        "bankName": "LIC Housing Finance",
+        "bankLogo": "/bankLogo/177_Logo.png",
+        "slug": "lic-housing-finance",
+        "minroi": 8.6,
+        "maxroi": 9
+      },
+      {
+        "bankId": "161",
+        "bankName": "Indiabulls",
+        "bankLogo": "/bankLogo/161_Logo.png",
+        "slug": "indiabulls",
+        "minroi": 9.3,
+        "maxroi": 10.5
+      },
+      {
+        "bankId": "53",
+        "bankName": "PNB Housing Finance Limited",
+        "bankLogo": "/bankLogo/53_Logo.png",
+        "slug": "punjab-national-bank-hfl",
+        "minroi": 8.75,
+        "maxroi": 11
+      },
+      {
+        "bankId": "69",
+        "bankName": "Aadhar Housing Finance",
+        "bankLogo": "/bankLogo/69_Logo.png",
+        "slug": "aadhar-housing-finance",
+        "minroi": 11.75,
+        "maxroi": 17
+      },
+      {
+        "bankId": "29",
+        "bankName": "Bajaj Housing Finance",
+        "bankLogo": "/bankLogo/29_Logo.png",
+        "slug": "bajaj-housing-finance-limited",
+        "minroi": 8.7,
+        "maxroi": 15
+      },
+      {
+        "bankId": "207",
+        "bankName": "Repco Home Finance",
+        "bankLogo": "/bankLogo/207_Logo.png",
+        "slug": "repco-home-finance",
+        "minroi": 9.5,
+        "maxroi": 10.15
+      },
+      {
+        "bankId": "61",
+        "bankName": "IIFL",
+        "bankLogo": "/bankLogo/61_Logo.png",
+        "slug": "iifl",
+        "minroi": 13,
+        "maxroi": 16
+      },
+      {
+        "bankId": "15",
+        "bankName": "Axis Bank",
+        "bankLogo": "/bankLogo/15_Logo.png",
+        "slug": "axis-bank",
+        "minroi": 8.75,
+        "maxroi": 8.95
+      },
+      {
+        "bankId": "31",
+        "bankName": "Piramal Capital & Housing Finance (PCHFL)",
+        "bankLogo": "/bankLogo/31_Logo.png",
+        "slug": "piramal-capital-housing-finance-bank",
+        "minroi": 11,
+        "maxroi": 14
+      },
+      {
+        "bankId": "27",
+        "bankName": "Bank of Baroda",
+        "bankLogo": "/bankLogo/27_Logo.png",
+        "slug": "bank-of-baroda",
+        "minroi": 9.15,
+        "maxroi": 10.05
+      },
+      {
+        "bankId": "95",
+        "bankName": "Canara Bank ",
+        "bankLogo": "/bankLogo/95_Logo.png",
+        "slug": "canara-bank",
+        "minroi": 9.25,
+        "maxroi": 10.3
+      }
+    ],
+    "dynamicBankInterLink": [
+      {
+        "bankId": "17",
+        "bankName": "Union Bank of India",
+        "bankLogo": "/bankLogo/17_Logo.png",
+        "slug": "union-bank",
+        "minroi": 9,
+        "maxroi": 10
+      },
+      {
+        "bankId": "147",
+        "bankName": "Hinduja Housing Finance",
+        "bankLogo": "/bankLogo/147_Logo.png",
+        "slug": "hinduja-housing-finance",
+        "minroi": 10.5,
+        "maxroi": 14.5
+      },
+      {
+        "bankId": "237",
+        "bankName": "Tata Capital",
+        "bankLogo": "/bankLogo/237_Logo.png",
+        "slug": "tata-capital",
+        "minroi": 9.15,
+        "maxroi": 14
+      },
+      {
+        "bankId": "205",
+        "bankName": "Reliance",
+        "bankLogo": "/bankLogo/205_Logo.png",
+        "slug": "reliance-home-finance",
+        "minroi": 9.75,
+        "maxroi": 15
+      },
+      {
+        "bankId": "89",
+        "bankName": "Bandhan Bank",
+        "bankLogo": "/bankLogo/89_Logo.png",
+        "slug": "bandhan-bank",
+        "minroi": 9.15,
+        "maxroi": 13.5
+      },
+      {
+        "bankId": "65",
+        "bankName": "Kotak Mahindra Bank",
+        "bankLogo": "/bankLogo/65_Logo.png",
+        "slug": "kotak-mahindra-bank",
+        "minroi": 8.85,
+        "maxroi": 9.45
+      },
+      {
+        "bankId": "123",
+        "bankName": "Edelweiss Housing Finance",
+        "bankLogo": "/bankLogo/123_Logo.png",
+        "slug": "edelweiss-housing-finance",
+        "minroi": 10,
+        "maxroi": 16.95
+      },
+      {
+        "bankId": "97",
+        "bankName": "CanFin",
+        "bankLogo": "/bankLogo/97_Logo.png",
+        "slug": "can-fin",
+        "minroi": 9.6,
+        "maxroi": 10.5
+      },
+      {
+        "bankId": "91",
+        "bankName": "Bank of India",
+        "bankLogo": "/bankLogo/91_Logo.png",
+        "slug": "bank-of-india",
+        "minroi": 9.25,
+        "maxroi": 9.65
+      },
+      {
+        "bankId": "51",
+        "bankName": "Indian Bank",
+        "bankLogo": "/bankLogo/51_Logo.png",
+        "slug": "indian-bank",
+        "minroi": 8.85,
+        "maxroi": 9
+      },
+      {
+        "bankId": "249",
+        "bankName": "Yes Bank",
+        "bankLogo": "/bankLogo/249_Logo.png",
+        "slug": "yes-bank",
+        "minroi": 9.15,
+        "maxroi": 11.8
+      },
+      {
+        "bankId": "93",
+        "bankName": "Bank of Maharashtra",
+        "bankLogo": "/bankLogo/93_Logo.png",
+        "slug": "bank-of-maharashtra",
+        "minroi": 8.5,
+        "maxroi": 9.35
+      }
+    ]
+  }
+}

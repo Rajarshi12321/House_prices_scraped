@@ -1,6 +1,7 @@
 import scrapy
 from pathlib import Path
 import json
+# import string
 
 
 class HousePricesSpider(scrapy.Spider):
@@ -23,12 +24,32 @@ class HousePricesSpider(scrapy.Spider):
 
         # print("\n\n\n {no} \n\n\n".format(no=len(cards)))
 
+        # Pointing out the location of desired data using xpath
         contents = response.xpath(
-            '//div[@layout:fragment="content"]/text()').getall()
+            '//body/div/div/script/text()').getall()
+
+        print("\n\n\n hey \n\n\n ")
+        print(type(contents))
+
+        # Converting list output to string for further processing
+
+        contents = " ".join(contents)
+
+        # Striping the text in the script tag to get the desired json (string format)
+
+        start_index = contents.find('{')
+        end_index = contents.rfind('}') + 1
+        dictionary_string = contents[start_index:end_index]
+
+        # Converting string json to dictionary for processing
+
+        dict = json.loads(dictionary_string)
 
         fn = f"hellobro.json"
-        Path(fn).write_text(",".join(contents))
-        print(contents)
+        Path(fn).write_text(dictionary_string, encoding='utf-8')
+
+        print("\n\n\n bye \n\n\n ")
+
         # url = []
         # NoRooms = []
         # Lat = []
