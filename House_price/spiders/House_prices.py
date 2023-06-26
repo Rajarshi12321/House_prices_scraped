@@ -46,6 +46,9 @@ class HousePricesSpider(scrapy.Spider):
         urls = [
             "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
             "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
+            "https://www.magicbricks.com/propertyDetails/1-BHK-350-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423634363538363139",
+            "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-5-in-Bangalore&id=4d423636313130363131",
+
             # "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Kolkata",
         ]
         for url in urls:
@@ -53,14 +56,8 @@ class HousePricesSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        # page = response.url.split("=")[-1]
-        # filename = f"houses-{page}.html"
-
-        # cards = response.css(".mb-srp__card")
-
-        # print("\n\n\n {no} \n\n\n".format(no=len(cards)))
-
         # Pointing out the location of desired data using xpath
+
         contents = response.xpath(
             '//body/div/div/script/text()').getall()
 
@@ -86,69 +83,148 @@ class HousePricesSpider(scrapy.Spider):
 
         print("\n\n\n bye \n\n\n ")
 
-        # print(type(contents))
-        # print("\n\n\n hey \n\n\n ")
-        # print(type(json.loads(content)))
-        # print("\n\n\n bye \n\n\n")
-
         print(dict["propertyDetailInfoBeanData"])
 
-        city.append(dict["propertyDetailInfoBeanData"]
-                    ["cityName"])
-        bedrooms.append(dict["propertyDetailInfoBeanData"]
-                        ["propertyDetail"]["detailBean"]["bedrooms"])
-        bathrooms.append(dict["propertyDetailInfoBeanData"]
-                         ["propertyDetail"]["detailBean"]["bathrooms"])
-        balconies.append(dict["propertyDetailInfoBeanData"]
-                         ["propertyDetail"]["detailBean"]["numberOfBalconied"])
-        postedOn.append(dict["propertyDetailInfoBeanData"]
-                        ["propertyDetail"]["detailBean"]["postedOn"])
-        furnishing.append(dict["propertyDetailInfoBeanData"]
-                          ["propertyDetail"]["detailBean"]["furnished"])
-        facing.append(dict["propertyDetailInfoBeanData"]
-                      ["propertyDetail"]["detailBean"]["facing"])
-        flrNum.append(dict["propertyDetailInfoBeanData"]
-                      ["propertyDetail"]["detailBean"]["floorNumber"])
-        totalFlrNum.append(dict["propertyDetailInfoBeanData"]
-                           ["propertyDetail"]["detailBean"]["totalFloorNumber"])
-        RentOrSale.append(dict["propertyDetailInfoBeanData"]
-                          ["propertyDetail"]["detailBean"]["saleRent"])
-        amenitites.append(dict["propertyDetailInfoBeanData"]
-                          ["propertyDetail"]["detailBean"]["amenityMap"])
-        locality.append(dict["propertyDetailInfoBeanData"]
-                        ["propertyDetail"]["detailBean"]["locality"])
-        carpetArea.append(dict["propertyDetailInfoBeanData"]
-                          ["propertyDetail"]["detailBean"]["carpetArea"])
-        carpetAreaUnit.append(dict["propertyDetailInfoBeanData"]
-                              ["propertyDetail"]["detailBean"]["carpetAreaUnit"])
-        Lat.append(dict["propertyDetailInfoBeanData"]
-                   ["propertyDetail"]["detailBean"]["latitude"])
-        Long.append(dict["propertyDetailInfoBeanData"]
+        try:
+            city.append(dict["propertyDetailInfoBeanData"]
+                        ["cityName"])
+        except KeyError:
+            city.append(0)
+
+        try:
+            bedrooms.append(dict["propertyDetailInfoBeanData"]
+                            ["propertyDetail"]["detailBean"]["bedrooms"])
+        except KeyError:
+            bedrooms.append(0)
+
+        try:
+            bathrooms.append(dict["propertyDetailInfoBeanData"]
+                             ["propertyDetail"]["detailBean"]["bathrooms"])
+        except KeyError:
+            bathrooms.append(0)
+
+        try:
+            balconies.append(dict["propertyDetailInfoBeanData"]
+                             ["propertyDetail"]["detailBean"]["numberOfBalconied"])
+        except KeyError:
+            balconies.append(0)
+
+        try:
+            postedOn.append(dict["propertyDetailInfoBeanData"]
+                            ["propertyDetail"]["detailBean"]["postedOn"])
+        except KeyError:
+            postedOn.append(0)
+
+        try:
+            furnishing.append(dict["propertyDetailInfoBeanData"]
+                              ["propertyDetail"]["detailBean"]["furnished"])
+        except KeyError:
+            furnishing.append(0)
+
+        try:
+            facing.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["facing"])
+        except KeyError:
+            facing.append(0)
+
+        try:
+            flrNum.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["floorNumber"])
+        except KeyError:
+            flrNum.append(0)
+
+        try:
+            totalFlrNum.append(dict["propertyDetailInfoBeanData"]
+                               ["propertyDetail"]["detailBean"]["totalFloorNumber"])
+        except KeyError:
+            totalFlrNum.append(0)
+
+        try:
+            RentOrSale.append(dict["propertyDetailInfoBeanData"]
+                              ["propertyDetail"]["detailBean"]["saleRent"])
+
+        except KeyError:
+            RentOrSale.append(0)
+
+        try:
+            amenitites.append(dict["propertyDetailInfoBeanData"]
+                              ["propertyDetail"]["detailBean"]["amenityMap"])
+        except KeyError:
+            amenitites.append(0)
+
+        try:
+            locality.append(dict["propertyDetailInfoBeanData"]
+                            ["propertyDetail"]["detailBean"]["locality"])
+        except KeyError:
+            locality.append(0)
+
+        try:
+            carpetArea.append(dict["propertyDetailInfoBeanData"]
+                              ["propertyDetail"]["detailBean"]["carpetArea"])
+        except KeyError:
+            carpetArea.append(0)
+        try:
+            carpetAreaUnit.append(dict["propertyDetailInfoBeanData"]
+                                  ["propertyDetail"]["detailBean"]["carpetAreaUnit"])
+        except KeyError:
+            carpetAreaUnit.append(0)
+        try:
+            Lat.append(dict["propertyDetailInfoBeanData"]
+                       ["propertyDetail"]["detailBean"]["latitude"])
+        except KeyError:
+            Lat.append(0)
+        try:
+            Long.append(dict["propertyDetailInfoBeanData"]
                         ["propertyDetail"]["detailBean"]["longitude"])
-        noOfLifts.append(dict["propertyDetailInfoBeanData"]
-                         ["propertyDetail"]["detailBean"]["noOfLifts"])
+        except KeyError:
+            Long.append(0)
+        try:
+            noOfLifts.append(dict["propertyDetailInfoBeanData"]
+                             ["propertyDetail"]["detailBean"]["noOfLifts"])
+        except KeyError:
+            noOfLifts.append(0)
 
-        rentPrice.append(dict["propertyDetailInfoBeanData"]
-                         ["propertyDetail"]["detailBean"]["priceBreakUp"]["rentPrice"])
-        securityDeposit.append(dict["propertyDetailInfoBeanData"]
-                               ["propertyDetail"]["detailBean"]["priceBreakUp"]["securityDeposit"])
-        maintenanceCharges.append(dict["propertyDetailInfoBeanData"]
-                                  ["propertyDetail"]["detailBean"]["priceBreakUp"]["monthlyMaintenance"])
-        maintenanceChargesFrequency.append(dict["propertyDetailInfoBeanData"]
-                                           ["propertyDetail"]["detailBean"]["maintenanceChargesFrequency"])
-        firstMonthCharges.append(dict["propertyDetailInfoBeanData"]
-                                 ["propertyDetail"]["detailBean"]["priceBreakUp"]["firstMonthCharges"])
-        brokerage.append(dict["propertyDetailInfoBeanData"]
-                         ["propertyDetail"]["detailBean"]["brokerage"])
-        exactPrice.append(dict["propertyDetailInfoBeanData"]
-                          ["propertyDetail"]["detailBean"]["exactSaleRentPrice"])
-        sqftPrice.append(dict["propertyDetailInfoBeanData"]
-                         ["propertyDetail"]["detailBean"]["sqftPrice"])
+        try:
+            rentPrice.append(dict["propertyDetailInfoBeanData"]
+                             ["propertyDetail"]["detailBean"]["priceBreakUp"]["rentPrice"])
+        except KeyError:
+            rentPrice.append(0)
+        try:
+            securityDeposit.append(dict["propertyDetailInfoBeanData"]
+                                   ["propertyDetail"]["detailBean"]["priceBreakUp"]["securityDeposit"])
+        except KeyError:
+            securityDeposit.append(0)
+        try:
+            maintenanceCharges.append(dict["propertyDetailInfoBeanData"]
+                                      ["propertyDetail"]["detailBean"]["priceBreakUp"]["monthlyMaintenance"])
+        except KeyError:
+            maintenanceCharges.append(0)
+        try:
+            maintenanceChargesFrequency.append(dict["propertyDetailInfoBeanData"]
+                                               ["propertyDetail"]["detailBean"]["maintenanceChargesFrequency"])
+        except KeyError:
+            maintenanceChargesFrequency.append(0)
+        try:
+            firstMonthCharges.append(dict["propertyDetailInfoBeanData"]
+                                     ["propertyDetail"]["detailBean"]["priceBreakUp"]["firstMonthCharges"])
+        except KeyError:
+            firstMonthCharges.append(0)
+        try:
+            brokerage.append(dict["propertyDetailInfoBeanData"]
+                             ["propertyDetail"]["detailBean"]["brokerage"])
+        except KeyError:
+            brokerage.append(0)
+        try:
+            exactPrice.append(dict["propertyDetailInfoBeanData"]
+                              ["propertyDetail"]["detailBean"]["exactSaleRentPrice"])
+        except KeyError:
+            exactPrice.append(0)
+        try:
+            sqftPrice.append(dict["propertyDetailInfoBeanData"]
+                             ["propertyDetail"]["detailBean"]["sqftPrice"])
+        except KeyError:
+            sqftPrice.append(0)
 
-        # url.append(dict["propertyDetailInfoBeanData"])
-        # url.append(dict["propertyDetailInfoBeanData"])
-        # url.append(dict["propertyDetailInfoBeanData"])
-        # url.append(dict["propertyDetailInfoBeanData"])
         # url.append(dict["propertyDetailInfoBeanData"])
         # url.append(dict["propertyDetailInfoBeanData"])
 
@@ -156,8 +232,9 @@ class HousePricesSpider(scrapy.Spider):
         print(len(Lat), len(Long), amenitites)
 
     def parse_list(self, response):
-        page = response.url.split("=")[-1]
-        filename = f"houses-{page}.html"
+
+        # page = response.url.split("=")[-1]
+        # filename = f"houses-{page}.html"
 
         # cards = response.css(".mb-srp__card")
 
