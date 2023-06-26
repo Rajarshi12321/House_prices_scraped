@@ -5,7 +5,7 @@ import json
 
 
 # List of features
-amenity_list = list()
+amenity_list = set()
 
 
 city = []
@@ -147,8 +147,10 @@ class HousePricesSpider(scrapy.Spider):
             RentOrSale.append(0)
 
         try:
-            amenitites.append(dict["propertyDetailInfoBeanData"]
-                              ["propertyDetail"]["detailBean"]["amenityMap"])
+            amenity_features = dict["propertyDetailInfoBeanData"]["propertyDetail"]["detailBean"]["amenityMap"]
+            amenitites.append(amenity_features)
+            for values in amenity_features.values():
+                amenity_list.add(values.replace(" ", ""))
         except KeyError:
             amenitites.append(0)
 
@@ -229,7 +231,8 @@ class HousePricesSpider(scrapy.Spider):
         # url.append(dict["propertyDetailInfoBeanData"])
 
         print("\n\n\n finish \n\n\n")
-        print(len(Lat), len(Long), amenitites)
+        print(len(Lat), len(Long), amenitites, )
+        print(amenity_list)
 
     def parse_list(self, response):
 
