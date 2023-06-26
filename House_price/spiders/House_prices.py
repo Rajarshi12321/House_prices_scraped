@@ -4,12 +4,48 @@ import json
 # import string
 
 
+# List of features
+amenity_list = list()
+
+
+city = []
+bedrooms = []
+bathrooms = []
+balconies = []
+postedOn = []
+furnishing = []
+facing = []
+flrNum = []
+totalFlrNum = []
+RentOrSale = []
+
+amenitites = []
+
+locality = []
+carpetArea = []
+carpetAreaUnit = []
+Lat = []
+Long = []
+noOfLifts = []
+
+rentPrice = []
+securityDeposit = []
+maintenanceCharges = []
+maintenanceChargesFrequency = []
+firstMonthCharges = []
+
+brokerage = []
+exactPrice = []
+sqftPrice = []
+
+
 class HousePricesSpider(scrapy.Spider):
     name = 'House_prices'
 
     def start_requests(self):
         urls = [
             "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
+            "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
             # "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Kolkata",
         ]
         for url in urls:
@@ -45,36 +81,79 @@ class HousePricesSpider(scrapy.Spider):
 
         dict = json.loads(dictionary_string)
 
-        fn = f"hellobro.json"
-        Path(fn).write_text(dictionary_string, encoding='utf-8')
+        # fn = f"newjsonbro.json"
+        # Path(fn).write_text(dictionary_string, encoding='utf-8')
 
         print("\n\n\n bye \n\n\n ")
 
-        # url = []
-        # NoRooms = []
-        # Lat = []
-        # Long = []
-        # Locality = []
-        # Capital = []
+        # print(type(contents))
+        # print("\n\n\n hey \n\n\n ")
+        # print(type(json.loads(content)))
+        # print("\n\n\n bye \n\n\n")
 
-        # for content in contents:
-        #     # print(type(contents))
-        #     # print("\n\n\n hey \n\n\n ")
-        #     # print(type(json.loads(content)))
-        #     # print("\n\n\n bye \n\n\n")
+        print(dict["propertyDetailInfoBeanData"])
 
-        #     cont = json.loads(content)
-        #     print(cont["geo"])
+        city.append(dict["propertyDetailInfoBeanData"]
+                    ["cityName"])
+        bedrooms.append(dict["propertyDetailInfoBeanData"]
+                        ["propertyDetail"]["detailBean"]["bedrooms"])
+        bathrooms.append(dict["propertyDetailInfoBeanData"]
+                         ["propertyDetail"]["detailBean"]["bathrooms"])
+        balconies.append(dict["propertyDetailInfoBeanData"]
+                         ["propertyDetail"]["detailBean"]["numberOfBalconied"])
+        postedOn.append(dict["propertyDetailInfoBeanData"]
+                        ["propertyDetail"]["detailBean"]["postedOn"])
+        furnishing.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["furnished"])
+        facing.append(dict["propertyDetailInfoBeanData"]
+                      ["propertyDetail"]["detailBean"]["facing"])
+        flrNum.append(dict["propertyDetailInfoBeanData"]
+                      ["propertyDetail"]["detailBean"]["floorNumber"])
+        totalFlrNum.append(dict["propertyDetailInfoBeanData"]
+                           ["propertyDetail"]["detailBean"]["totalFloorNumber"])
+        RentOrSale.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["saleRent"])
+        amenitites.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["amenityMap"])
+        locality.append(dict["propertyDetailInfoBeanData"]
+                        ["propertyDetail"]["detailBean"]["locality"])
+        carpetArea.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["carpetArea"])
+        carpetAreaUnit.append(dict["propertyDetailInfoBeanData"]
+                              ["propertyDetail"]["detailBean"]["carpetAreaUnit"])
+        Lat.append(dict["propertyDetailInfoBeanData"]
+                   ["propertyDetail"]["detailBean"]["latitude"])
+        Long.append(dict["propertyDetailInfoBeanData"]
+                        ["propertyDetail"]["detailBean"]["longitude"])
+        noOfLifts.append(dict["propertyDetailInfoBeanData"]
+                         ["propertyDetail"]["detailBean"]["noOfLifts"])
 
-        #     url.append(cont["url"])
-        #     NoRooms.append(cont["numberOfRooms"])
-        #     Lat.append(cont["geo"]["latitude"])
-        #     Long.append(cont["geo"]["longitude"])
-        #     Locality.append(cont["address"]["addressLocality"])
-        #     Capital.append(cont["address"]["addressRegion"])
+        rentPrice.append(dict["propertyDetailInfoBeanData"]
+                         ["propertyDetail"]["detailBean"]["priceBreakUp"]["rentPrice"])
+        securityDeposit.append(dict["propertyDetailInfoBeanData"]
+                               ["propertyDetail"]["detailBean"]["priceBreakUp"]["securityDeposit"])
+        maintenanceCharges.append(dict["propertyDetailInfoBeanData"]
+                                  ["propertyDetail"]["detailBean"]["priceBreakUp"]["monthlyMaintenance"])
+        maintenanceChargesFrequency.append(dict["propertyDetailInfoBeanData"]
+                                           ["propertyDetail"]["detailBean"]["maintenanceChargesFrequency"])
+        firstMonthCharges.append(dict["propertyDetailInfoBeanData"]
+                                 ["propertyDetail"]["detailBean"]["priceBreakUp"]["firstMonthCharges"])
+        brokerage.append(dict["propertyDetailInfoBeanData"]
+                         ["propertyDetail"]["detailBean"]["brokerage"])
+        exactPrice.append(dict["propertyDetailInfoBeanData"]
+                          ["propertyDetail"]["detailBean"]["exactSaleRentPrice"])
+        sqftPrice.append(dict["propertyDetailInfoBeanData"]
+                         ["propertyDetail"]["detailBean"]["sqftPrice"])
 
-        #     print("\n\n\n finish \n\n\n")
-        # print(len(Lat), len(Long), url)
+        # url.append(dict["propertyDetailInfoBeanData"])
+        # url.append(dict["propertyDetailInfoBeanData"])
+        # url.append(dict["propertyDetailInfoBeanData"])
+        # url.append(dict["propertyDetailInfoBeanData"])
+        # url.append(dict["propertyDetailInfoBeanData"])
+        # url.append(dict["propertyDetailInfoBeanData"])
+
+        print("\n\n\n finish \n\n\n")
+        print(len(Lat), len(Long), amenitites)
 
     def parse_list(self, response):
         page = response.url.split("=")[-1]
