@@ -1,13 +1,83 @@
 import scrapy
 from pathlib import Path
 import json
+import pandas as pd
 # import string
 
 
 # List of features
 amenity_list = set()
 
+# List of Amenities in dictionary
 
+amenity_dict = {'Bank & ATM': [],
+                'Golf Course': [],
+                'Early Learning Centre': [],
+                'Kids Play Area': [],
+                'Security': [],
+                'Meditation Area': [],
+                'Park': [],
+                'Multipurpose Courts': [],
+                'Intercom Facility': [],
+                'Rain Water Harvesting': [],
+                'AEROBICS ROOM': [],
+                'DTH Television Facility': [],
+                'Banquet Hall': [],
+                'Piped Gas': [],
+                'Earth quake resistant': [],
+                'Private Garden': [],
+                'Skydeck': [],
+                'Internet/Wi-Fi Connectivity': [],
+                'Cafeteria/Food Court': [],
+                'Grand Entrance lobby': [],
+                'Event Space & Amphitheatre': [],
+                'Conference Room': [],
+                'Recreational Pool': [],
+                'Visitor Parking': [],
+                'Guest Accommodation': [],
+                'Kids Play Pool With Water Slides': [],
+                'Concierge Services': [],
+                'Mini Cinema Theatre': [],
+                'Indoor Games Room': [],
+                'Outdoor Tennis Courts': [],
+                'Flower Gardens': [],
+                'Vaastu Compliant': [],
+                'Health club with Steam / Jaccuzi': [],
+                'CCTV Camera': [],
+                'Cricket net practice': [],
+                'Bar/Lounge': [],
+                'Club House': [],
+                'Air Conditioned': [],
+                'Canopy Walk': [],
+                'Fire Fighting Equipment': [],
+                'Private Terrace/Garden': [],
+                'Cycling & Jogging Track': [],
+                'RO Water System': [],
+                'Activity Deck4': [],
+                'Power Back Up': [],
+                'Reserved Parking': [],
+                'Barbeque Pit': [],
+                'Dance Studio': [],
+                'Kids Club': [],
+                'Service/Goods Lift': [],
+                'Retail Boulevard (Retail Shops)': [],
+                'Waste Disposal': [],
+                'Lift': [],
+                'Library': [],
+                'Laundry Service': [],
+                'Rentable Community Space': [],
+                'Indoor Squash & Badminton Courts': [],
+                'Maintenance Staff': [],
+                'Jogging and Strolling Track': [],
+                'Library And Business Centre': [],
+                'Water Storage': [],
+                'Multipurpose Hall': [],
+                'Coffee Lounge & Restaurants': [],
+                'Gymnasium': [],
+                'Swimming Pool': [],
+                'Arts & Craft Studio': []}
+
+##
 city = []
 bedrooms = []
 bathrooms = []
@@ -20,6 +90,7 @@ totalFlrNum = []
 RentOrSale = []
 
 amenitites = []
+
 
 locality = []
 carpetArea = []
@@ -38,21 +109,54 @@ brokerage = []
 exactPrice = []
 sqftPrice = []
 
+# maing dictionary of all the list
+
+Df_dict = {"city": city,
+           "bathrooms": bathrooms,
+           "bedrooms": bedrooms,
+           "balconies": balconies,
+           "postedOn": postedOn,
+           "furnishing": furnishing,
+           "facing": facing,
+           "flrNum": flrNum,
+           "totalFlrNum": totalFlrNum,
+           "RentOrSale": RentOrSale,
+           "locality": locality,
+           "carpetArea": carpetArea,
+           "carpetAreaUnit": carpetAreaUnit,
+           "Lat": Lat,
+           "Long": Long,
+           "noOfLifts": noOfLifts,
+           "rentPrice": rentPrice,
+           "securityDeposit": securityDeposit,
+           "maintenanceCharges": maintenanceCharges,
+           "maintenanceChargesFrequency": maintenanceChargesFrequency,
+           "firstMonthCharges": firstMonthCharges,
+           "brokerage": brokerage,
+           "exactPrice": exactPrice,
+           "sqftPrice": sqftPrice,
+           }
+
+Df_dict.update(amenity_dict)
+
 
 class HousePricesSpider(scrapy.Spider):
     name = 'House_prices'
 
     def start_requests(self):
         urls = [
-            "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
-            "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
-            "https://www.magicbricks.com/propertyDetails/1-BHK-350-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423634363538363139",
-            "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-5-in-Bangalore&id=4d423636313130363131",
+            "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Bangalore",
+            # "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
+            # "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
+            # "https://www.magicbricks.com/propertyDetails/1-BHK-350-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423634363538363139",
+            # "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-5-in-Bangalore&id=4d423636313130363131",
 
             # "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Kolkata",
         ]
         for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+            yield scrapy.Request(url=url, callback=self.parse_list)
+
+        # print("\n\n\n city\n\n", city)
 
     def parse(self, response):
 
@@ -60,9 +164,6 @@ class HousePricesSpider(scrapy.Spider):
 
         contents = response.xpath(
             '//body/div/div/script/text()').getall()
-
-        print("\n\n\n hey \n\n\n ")
-        print(type(contents))
 
         # Converting list output to string for further processing
 
@@ -78,212 +179,188 @@ class HousePricesSpider(scrapy.Spider):
 
         dict = json.loads(dictionary_string)
 
-        # fn = f"newjsonbro.json"
-        # Path(fn).write_text(dictionary_string, encoding='utf-8')
-
-        print("\n\n\n bye \n\n\n ")
-
-        print(dict["propertyDetailInfoBeanData"])
-
         try:
             city.append(dict["propertyDetailInfoBeanData"]
                         ["cityName"])
         except KeyError:
-            city.append(0)
+            city.append(9)
 
         try:
             bedrooms.append(dict["propertyDetailInfoBeanData"]
                             ["propertyDetail"]["detailBean"]["bedrooms"])
         except KeyError:
-            bedrooms.append(0)
+            bedrooms.append(9)
 
         try:
             bathrooms.append(dict["propertyDetailInfoBeanData"]
                              ["propertyDetail"]["detailBean"]["bathrooms"])
         except KeyError:
-            bathrooms.append(0)
+            bathrooms.append(9)
 
         try:
             balconies.append(dict["propertyDetailInfoBeanData"]
                              ["propertyDetail"]["detailBean"]["numberOfBalconied"])
         except KeyError:
-            balconies.append(0)
+            balconies.append(9)
 
         try:
             postedOn.append(dict["propertyDetailInfoBeanData"]
                             ["propertyDetail"]["detailBean"]["postedOn"])
         except KeyError:
-            postedOn.append(0)
+            postedOn.append(9)
 
         try:
             furnishing.append(dict["propertyDetailInfoBeanData"]
                               ["propertyDetail"]["detailBean"]["furnished"])
         except KeyError:
-            furnishing.append(0)
+            furnishing.append(9)
 
         try:
             facing.append(dict["propertyDetailInfoBeanData"]
                           ["propertyDetail"]["detailBean"]["facing"])
         except KeyError:
-            facing.append(0)
+            facing.append(9)
 
         try:
             flrNum.append(dict["propertyDetailInfoBeanData"]
                           ["propertyDetail"]["detailBean"]["floorNumber"])
         except KeyError:
-            flrNum.append(0)
+            flrNum.append(9)
 
         try:
             totalFlrNum.append(dict["propertyDetailInfoBeanData"]
                                ["propertyDetail"]["detailBean"]["totalFloorNumber"])
         except KeyError:
-            totalFlrNum.append(0)
+            totalFlrNum.append(9)
 
         try:
             RentOrSale.append(dict["propertyDetailInfoBeanData"]
                               ["propertyDetail"]["detailBean"]["saleRent"])
 
         except KeyError:
-            RentOrSale.append(0)
+            RentOrSale.append(9)
 
         try:
             amenity_features = dict["propertyDetailInfoBeanData"]["propertyDetail"]["detailBean"]["amenityMap"]
             amenitites.append(amenity_features)
-            for values in amenity_features.values():
-                amenity_list.add(values.replace(" ", ""))
+            for dict_value in amenity_dict.keys():
+
+                try:
+
+                    if dict_value in amenity_features.values():
+                        amenity_dict[dict_value].append(1)
+
+                    else:
+                        amenity_dict[dict_value].append(0)
+                except:
+                    pass
+
         except KeyError:
-            amenitites.append(0)
+            for i in amenity_dict.keys():
+                amenity_dict[i].append(9)
 
         try:
             locality.append(dict["propertyDetailInfoBeanData"]
                             ["propertyDetail"]["detailBean"]["locality"])
         except KeyError:
-            locality.append(0)
+            locality.append(9)
 
         try:
             carpetArea.append(dict["propertyDetailInfoBeanData"]
                               ["propertyDetail"]["detailBean"]["carpetArea"])
         except KeyError:
-            carpetArea.append(0)
+            carpetArea.append(9)
         try:
             carpetAreaUnit.append(dict["propertyDetailInfoBeanData"]
                                   ["propertyDetail"]["detailBean"]["carpetAreaUnit"])
         except KeyError:
-            carpetAreaUnit.append(0)
+            carpetAreaUnit.append(9)
         try:
             Lat.append(dict["propertyDetailInfoBeanData"]
                        ["propertyDetail"]["detailBean"]["latitude"])
         except KeyError:
-            Lat.append(0)
+            Lat.append(9)
         try:
             Long.append(dict["propertyDetailInfoBeanData"]
                         ["propertyDetail"]["detailBean"]["longitude"])
         except KeyError:
-            Long.append(0)
+            Long.append(9)
         try:
             noOfLifts.append(dict["propertyDetailInfoBeanData"]
                              ["propertyDetail"]["detailBean"]["noOfLifts"])
         except KeyError:
-            noOfLifts.append(0)
+            noOfLifts.append(9)
 
         try:
             rentPrice.append(dict["propertyDetailInfoBeanData"]
                              ["propertyDetail"]["detailBean"]["priceBreakUp"]["rentPrice"])
         except KeyError:
-            rentPrice.append(0)
+            rentPrice.append(9)
         try:
             securityDeposit.append(dict["propertyDetailInfoBeanData"]
                                    ["propertyDetail"]["detailBean"]["priceBreakUp"]["securityDeposit"])
         except KeyError:
-            securityDeposit.append(0)
+            securityDeposit.append(9)
         try:
             maintenanceCharges.append(dict["propertyDetailInfoBeanData"]
                                       ["propertyDetail"]["detailBean"]["priceBreakUp"]["monthlyMaintenance"])
         except KeyError:
-            maintenanceCharges.append(0)
+            maintenanceCharges.append(9)
         try:
             maintenanceChargesFrequency.append(dict["propertyDetailInfoBeanData"]
                                                ["propertyDetail"]["detailBean"]["maintenanceChargesFrequency"])
         except KeyError:
-            maintenanceChargesFrequency.append(0)
+            maintenanceChargesFrequency.append(9)
         try:
             firstMonthCharges.append(dict["propertyDetailInfoBeanData"]
                                      ["propertyDetail"]["detailBean"]["priceBreakUp"]["firstMonthCharges"])
         except KeyError:
-            firstMonthCharges.append(0)
+            firstMonthCharges.append(9)
         try:
             brokerage.append(dict["propertyDetailInfoBeanData"]
                              ["propertyDetail"]["detailBean"]["brokerage"])
         except KeyError:
-            brokerage.append(0)
+            brokerage.append(9)
         try:
             exactPrice.append(dict["propertyDetailInfoBeanData"]
                               ["propertyDetail"]["detailBean"]["exactSaleRentPrice"])
         except KeyError:
-            exactPrice.append(0)
+            exactPrice.append(9)
         try:
             sqftPrice.append(dict["propertyDetailInfoBeanData"]
                              ["propertyDetail"]["detailBean"]["sqftPrice"])
         except KeyError:
-            sqftPrice.append(0)
+            sqftPrice.append(9)
 
-        # url.append(dict["propertyDetailInfoBeanData"])
-        # url.append(dict["propertyDetailInfoBeanData"])
-
-        print("\n\n\n finish \n\n\n")
-        print(len(Lat), len(Long), amenitites, )
-        print(amenity_list)
+        return Df_dict
 
     def parse_list(self, response):
 
-        # page = response.url.split("=")[-1]
-        # filename = f"houses-{page}.html"
-
-        # cards = response.css(".mb-srp__card")
-
-        # print("\n\n\n {no} \n\n\n".format(no=len(cards)))
+        # Pointing out the location of desired data using xpath
 
         contents = response.xpath(
             '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()').getall()
 
-        # fn = f"json.json"
-        # Path(fn).write_text(",".join(contents))
+        # making new lists
 
         url = []
-        NoRooms = []
-        Lat = []
-        Long = []
-        Locality = []
-        Capital = []
 
         for content in contents:
-            # print(type(contents))
-            # print("\n\n\n hey \n\n\n ")
-            # print(type(json.loads(content)))
-            # print("\n\n\n bye \n\n\n")
+
+            # Changing string to json file
 
             cont = json.loads(content)
-            print(cont["geo"])
+
+            # Appending new data
+            yield scrapy.Request(url=cont["url"], callback=self.parse)
 
             url.append(cont["url"])
-            NoRooms.append(cont["numberOfRooms"])
-            Lat.append(cont["geo"]["latitude"])
-            Long.append(cont["geo"]["longitude"])
-            Locality.append(cont["address"]["addressLocality"])
-            Capital.append(cont["address"]["addressRegion"])
 
-            print("\n\n\n finish \n\n\n")
-        print(len(Lat), len(Long), url)
+        # Df_dict.update(amenity_dict)
+        # new = pd.DataFrame.from_dict(Df_dict)
 
+        # # new.to_csv('file1.csv')
 
-# ## Very important thing for amenity maps
+        # print("hey\n\n\n\n")
 
-
-# for element in new_amenity_map:
-#     for key, value in element.items():
-#         if value not in amenity_list:
-#             amenity_map[key] = value
-#             amenity_list.append(value)
-#             print(f"New amenity added: {value}")
-
-# print(amenity_list)
+        # print(amenity_dict)
