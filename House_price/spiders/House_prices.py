@@ -3,7 +3,13 @@ from pathlib import Path
 import json
 import pandas as pd
 # import string
+from selenium import webdriver
+from scrapy.http import HtmlResponse
 
+from scrapy_selenium import SeleniumRequest
+import time
+
+# selenium.__file__
 
 # List of features
 amenity_list = set()
@@ -141,20 +147,20 @@ Df_dict.update(amenity_dict)
 
 
 class HousePricesSpider(scrapy.Spider):
+
     name = 'House_prices'
 
     def start_requests(self):
+
+        # driver_path = "E:/projects/chromedriver"
+        # driver = Chrome(executable_path=driver_path)
+        # driver.get("https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Bangalore")
         urls = [
             "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Bangalore",
-            # "https://www.magicbricks.com/propertyDetails/3-BHK-2390-Sq-ft-Multistorey-Apartment-FOR-Rent-Rajaji-Nagar-in-Bangalore&id=4d423636393636313331",
-            # "https://www.magicbricks.com/propertyDetails/3-BHK-1950-Sq-ft-Multistorey-Apartment-FOR-Rent-Devanahalli-in-Bangalore-r1&id=4d423633373634303333",
-            # "https://www.magicbricks.com/propertyDetails/1-BHK-350-Sq-ft-Multistorey-Apartment-FOR-Rent-whitefield-in-Bangalore&id=4d423634363538363139",
-            # "https://www.magicbricks.com/propertyDetails/1-BHK-600-Sq-ft-Multistorey-Apartment-FOR-Rent-HSR-Layout-Sector-5-in-Bangalore&id=4d423636313130363131",
-
-            # "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Kolkata",
         ]
+
         for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse_list)
+            yield SeleniumRequest(url=url, callback=self.parse_list)
 
         # print("\n\n\n city\n\n", city)
 
@@ -332,29 +338,69 @@ class HousePricesSpider(scrapy.Spider):
         except KeyError:
             sqftPrice.append(9)
 
-        return Df_dict
+        new = pd.DataFrame.from_dict(Df_dict)
+
+        new.to_csv('file1.csv')
+
+        # return Df_dict
 
     def parse_list(self, response):
 
+        driver = webdriver.Edge()
+        driver.get(response.url)
+
         # Pointing out the location of desired data using xpath
 
-        contents = response.xpath(
-            '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()').getall()
+        # Extract and process data from the initial page
 
-        # making new lists
+        # Simulate scrolling behavior using Selenium
 
-        url = []
+        Xpath = '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()'
 
-        for content in contents:
+        last_height = driver.execute_script(
+            "return document.body.scrollHeight")
 
-            # Changing string to json file
+        while True:
+            # Scroll to the bottom of the page
+            driver.execute_script(
+                "window.scrollTo(0, document.body.scrollHeight);")
 
-            cont = json.loads(content)
+            # Wait for the page to load new content
+            time.sleep(3)  # Adjust the wait time if needed
 
-            # Appending new data
-            yield scrapy.Request(url=cont["url"], callback=self.parse)
+            # Check if the page height has changed after scrolling
+            new_height = driver.execute_script(
+                "return document.body.scrollHeight")
+            if new_height == last_height:
+                break
+            last_height = new_height
 
-            url.append(cont["url"])
+            # Extract and process data from the scrolled page
+
+            contents = response.xpath(
+                '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()').getall()
+
+            for content in contents:
+
+                # Changing string to json file
+
+                cont = json.loads(content)
+
+                # Appending new data
+                yield scrapy.Request(url=cont["url"], callback=self.parse)
+
+            # Convert the current page source to a Scrapy Response
+            response = HtmlResponse(
+                driver.current_url,
+                body=driver.page_source,
+                encoding='utf-8'
+            )
+
+        # driver.quit()
+
+        # # making new lists
+
+        # url = []
 
         # Df_dict.update(amenity_dict)
         # new = pd.DataFrame.from_dict(Df_dict)
