@@ -2,14 +2,12 @@ import scrapy
 from pathlib import Path
 import json
 import pandas as pd
-# import string
 from selenium import webdriver
 from scrapy.http import HtmlResponse
 
 from scrapy_selenium import SeleniumRequest
 import time
 
-# selenium.__file__
 
 # List of features
 amenity_list = set()
@@ -145,6 +143,33 @@ Df_dict = {"city": city,
 
 Df_dict.update(amenity_dict)
 
+cities = [
+    'hyderabad',  # Andhra Pradesh
+
+    'Patna',  # Bihar
+    'Raipur',  # Chhattisgarh
+    'Goa',  # Goa
+    'Gandhinagar',  # Gujarat
+    'Chandigarh',  # Haryana
+
+    'Ranchi',  # Jharkhand
+    'Bangalore',  # Karnataka
+
+    'Bhopal',  # Madhya Pradesh
+    'Mumbai',  # Maharashtra
+
+    'Chandigarh',  # Punjab
+    'Jaipur',  # Rajasthan
+    'Gangtok',  # Sikkim
+    'Chennai',  # Tamil Nadu
+    'Hyderabad',  # Telangana
+    'Agartala',  # Tripura
+    'Lucknow',  # Uttar Pradesh
+    'Dehradun',  # Uttarakhand
+    'Kolkata',  # West Bengal
+    'New-Delhi',  # Delhi
+]
+
 
 class HousePricesSpider(scrapy.Spider):
 
@@ -152,17 +177,11 @@ class HousePricesSpider(scrapy.Spider):
 
     def start_requests(self):
 
-        # driver_path = "E:/projects/chromedriver"
-        # driver = Chrome(executable_path=driver_path)
-        # driver.get("https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Bangalore")
-        urls = [
-            "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName=Bangalore",
-        ]
+        base = "https://www.magicbricks.com/property-for-rent/residential-real-estate?bedroom=&proptype=Multistorey-Apartment,Builder-Floor-Apartment,Penthouse,Studio-Apartment,Service-Apartment&cityName={CITY}"
 
-        for url in urls:
+        for city in cities:
+            url = f"{base.format(CITY=city)}"
             yield SeleniumRequest(url=url, callback=self.parse_list)
-
-        # print("\n\n\n city\n\n", city)
 
     def parse(self, response):
 
@@ -184,6 +203,8 @@ class HousePricesSpider(scrapy.Spider):
         # Converting string json to dictionary for processing
 
         dict = json.loads(dictionary_string)
+
+        # Appending all features to their respective lists
 
         try:
             city.append(dict["propertyDetailInfoBeanData"]
@@ -245,6 +266,8 @@ class HousePricesSpider(scrapy.Spider):
 
         except KeyError:
             RentOrSale.append(9)
+
+        # This part will handle the features of amenity-maps
 
         try:
             amenity_features = dict["propertyDetailInfoBeanData"]["propertyDetail"]["detailBean"]["amenityMap"]
@@ -340,14 +363,16 @@ class HousePricesSpider(scrapy.Spider):
 
         new = pd.DataFrame.from_dict(Df_dict)
 
-        new.to_csv('file1.csv')
+        # Storing the DataFrame to 'Scraped_Data.csv'
 
-        # return Df_dict
+        new.to_csv('Scraped_Data.csv', index=False)
 
     def parse_list(self, response):
 
         driver = webdriver.Edge()
         driver.get(response.url)
+
+        time.sleep(4)
 
         # Pointing out the location of desired data using xpath
 
@@ -355,58 +380,52 @@ class HousePricesSpider(scrapy.Spider):
 
         # Simulate scrolling behavior using Selenium
 
-        Xpath = '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()'
-
         last_height = driver.execute_script(
             "return document.body.scrollHeight")
 
         while True:
+
             # Scroll to the bottom of the page
+
             driver.execute_script(
                 "window.scrollTo(0, document.body.scrollHeight);")
 
             # Wait for the page to load new content
-            time.sleep(3)  # Adjust the wait time if needed
+            time.sleep(6)  # Adjust the wait time if needed
+
+            # with sleep of 5sec i went to 440824 pixel
 
             # Check if the page height has changed after scrolling
+
             new_height = driver.execute_script(
                 "return document.body.scrollHeight")
+
             if new_height == last_height:
+
                 break
             last_height = new_height
 
-            # Extract and process data from the scrolled page
+        # Extract the entire scrolled page
 
-            contents = response.xpath(
-                '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()').getall()
+        # Convert the entire page source to a Scrapy Response
 
-            for content in contents:
+        response = HtmlResponse(
+            driver.current_url,
+            body=driver.page_source,
+            encoding='utf-8'
+        )
 
-                # Changing string to json file
+        # Extract and process data from the scrolled page
 
-                cont = json.loads(content)
+        contents = response.xpath(
+            '(//div[@class="mb-srp__card"]/script[@type="application/ld+json"][1])/text()').getall()
 
-                # Appending new data
-                yield scrapy.Request(url=cont["url"], callback=self.parse)
+        for content in contents:
 
-            # Convert the current page source to a Scrapy Response
-            response = HtmlResponse(
-                driver.current_url,
-                body=driver.page_source,
-                encoding='utf-8'
-            )
+            # Changing string to json file
 
-        # driver.quit()
+            cont = json.loads(content)
 
-        # # making new lists
+            # Calling parse function to crawl each url and extract all the respective data possible
 
-        # url = []
-
-        # Df_dict.update(amenity_dict)
-        # new = pd.DataFrame.from_dict(Df_dict)
-
-        # # new.to_csv('file1.csv')
-
-        # print("hey\n\n\n\n")
-
-        # print(amenity_dict)
+            yield scrapy.Request(url=cont["url"], callback=self.parse)
