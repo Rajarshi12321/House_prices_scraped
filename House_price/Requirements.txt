@@ -1,0 +1,5 @@
+scrapy = 2.9.0  
+pathlib  = 1.0.1
+json 
+pandas  = 1.4.4
+selenium  = 4.10.0
