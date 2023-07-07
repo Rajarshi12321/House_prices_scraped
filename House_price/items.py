@@ -21,7 +21,6 @@ class HousePriceItem(scrapy.Item):
     flrNum = scrapy.Field()
     totalFlrNum = scrapy.Field()
     RentOrSale = scrapy.Field()
-    amenitites = scrapy.Field()
     locality = scrapy.Field()
     carpetArea = scrapy.Field()
     carpetAreaUnit = scrapy.Field()
