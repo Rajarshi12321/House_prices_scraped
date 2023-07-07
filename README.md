@@ -72,6 +72,9 @@ Now to run the program :-
 ## Results
 The results of the project : This project is able to scrape 27900 data with 70+ features
 
+You can check out the scrapped data that I published on [kaggle](https://www.kaggle.com/datasets/rajarshiroy0123/house-prices-in-india-2023)
+
+
 ## Contributing
 Contributions to this project are welcome! If you find any issues or have ideas for improvements, please open an issue or submit a pull request. Let's work together to enhance the scrape data and make the program more accurate.
 
