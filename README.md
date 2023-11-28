@@ -43,7 +43,7 @@ These are some required packages for our program which are mentioned in the Requ
 
 - scrapy   
 - pathlib
-- json 
+- scrapy-fake-useragent 
 - pandas 
 - selenium 
 
@@ -91,20 +91,24 @@ Now to run the program :-
 
 1. Activating the env
   
-    ```shell
-    conda activate <your-env-name> 
-    ```
+   ```shell
+   conda activate <Environment_Name>/
+   ```
 
 2. Going the main file by changing directory
-    ```shell
-    cd House_price
-    ```
+   ```shell
+   cd House_price
+   ```
 
 3. Running the file to scrape the data
    
    ```shell
-    scrapy crawl House_pricing -o <filename>
-    ```
+   scrapy crawl House_pricing -o <filename>
+   ```
+   For Example
+   ```shell
+   scrapy crawl House_pricing -o items.csv
+   ```
   This filename is where your scraped data would be stored,the data can be stored in .csv , .json or other type of files according to what type you will choose
 
 
