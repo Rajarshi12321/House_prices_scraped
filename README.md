@@ -72,7 +72,7 @@ To run this project locally, please follow these steps:
 4. **Install Dependencies**
    - Navigate to the project directory:
      ```
-     cd [project_directory]
+     cd House_prices_scraped
      ```
    - Run the following command to install project dependencies:
      ```
